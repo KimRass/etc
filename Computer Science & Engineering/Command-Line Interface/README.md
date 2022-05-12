@@ -142,6 +142,19 @@ git reset HEAD~1
 - ssh public key 생성.
 ## `cat ~/.ssh/id_rsa.pub`
 ## `ssh -T git@github.com`
+## `git clone` ~ Pull Quest
+```bash
+git clone "https://github.com/flitto/data_mgmt.git"
+git remote add origin “https://github.com/flitto/data_mgmt.git"
+git checkout -b "..."
+git add "..."
+git commit -m "..."
+git push
+...
+깃헙에서 "Pull requests" -> "New pull request" -> merge 완료되면
+git pull origin "devel"
+git branch -d "..."
+```
 
 # Anaconda Prompt
 ## Upgrade pip

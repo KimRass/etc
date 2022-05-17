@@ -204,3 +204,5 @@ pyinstaller [Option] file_name.py
 - Shell script 실행 권한 부여
 	- `chmod +x ./score2grade.sh`
 	- `chmod`: Change mode
+- `-iname`: Turns off case sensitivity.
+- `-name`: Retain case sensitivity.

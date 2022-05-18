@@ -2,17 +2,12 @@
 
 curl -s "https://finance.naver.com/item/main.naver?code=300080" > stock_flitto.html
 
-# sed -i 's/utf-8/euc-kr/g' stock_flitto.html
-sed "s/charset=utf-8/charset=euc-kr/g" stock_flitto.html
-# iconv -c stock_flitto.html > stock_flitto.html
+iconv -c -f euc-kr -t utf-8 stock_flitto.html > stock_flitto_enc.html
 
-# cat stock_flitto.html
+text=$(grep ".*현재가.*</dd>$" stock_flitto_enc.html)
 
-# grep "플리토" stock_flitto.html
-# //html/body/div/dl/dd
-# echo "cat //html/body/div/dl/dd" |  xmllint --html --shell stock_flitto.html
+price_now=$(echo $text | grep -oE "현재가 [0-9.,]+" | sed -e "s/현재가 //g")
+price_diff=$(echo $text | grep -oE "상승|하락 [0-9.,]+" | sed -e "s/상승 /+/g" |sed -e "s/하락 /-/g")
+percent=$(echo $text | grep -oE "플러스|마이너스 [0-9.,]+" | sed -e "s/플러스 /+/g" |sed -e "s/마이너스 /-/g")
 
-# while read line
-# do
-#     echo $line
-# done < stock_flitto.html
+echo "stock_index: $price_now ($price_diff, $percent%)"

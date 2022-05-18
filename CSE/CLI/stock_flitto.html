@@ -1,0 +1,7051 @@
+
+
+	
+	
+	
+	
+<html lang='ko'>
+<head>
+
+
+	
+		<title>�ø��� : ���̹� ����</title>
+	
+	
+
+
+
+
+
+	
+	
+		<meta http-equiv="Content-Type" content="text/html; charset=euc-kr" />
+	
+
+
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+
+
+
+
+	
+    
+        <meta property="og:url" content="https://finance.naver.com/item/main.naver?code=300080"/>
+        
+			
+		    
+		    	<meta property="og:title" content="�ø��� - ���̹� ���� : ���̹� ����"/>
+		     
+		
+		
+			
+			   <meta property="og:description" content="���������� �ǽð� �ְ��� ���� ������ Ȯ���ϴ� ��"/>
+		    
+		    
+		
+		 
+			
+			    <meta property="og:image" content="https://ssl.pstatic.net/static/m/stock/im/2016/08/og_stock-200.png"/>
+		    
+		    
+		
+    
+
+<meta property="og:type" content="article"/>
+<meta property="og:article:thumbnailUrl" content=""/>
+<meta property="og:article:author" content="���̹�����"/>
+<meta property="og:article:author:url" content="http://FINANCE.NAVER.COM"/>
+
+
+
+
+
+
+<link rel='stylesheet' type='text/css' href='https://ssl.pstatic.net/imgstock/static.pc/20220511192542/css/finance_header.css'>
+
+	
+	
+	
+	
+		
+		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/css/newstock.css">
+		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/css/common.css">
+		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/css/layout.css">
+		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/css/main.css">
+		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/css/newstock2.css">
+		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/css/newstock3.css">
+		<link rel="stylesheet" type="text/css" href="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/css/world.css">
+		
+			
+			
+				<script type="text/javascript" src="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/js/jindo.min.ns.1.5.3.euckr.js"></script>
+				<script type="text/javascript" src="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/js/release/common.js"></script>
+				<script type="text/javascript" src="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/js/jindoComponent/jindo.Component.1.0.3.js"></script>
+				<script type="text/javascript" src="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/js/nhn.autocomplete.stock.js"></script>
+			
+		
+
+		
+	
+
+<script>
+	var ieVersion = (function () {
+        var version = -1;
+        if (
+          navigator.appName == 'Microsoft Internet Explorer' &&
+          navigator.userAgent.toLowerCase().indexOf('msie') != -1 &&
+          new RegExp('MSIE ([0-9]{1,}[\./0-9]{0,})').exec(navigator.userAgent) != null
+        ) {
+          version = parseInt(RegExp.$1);
+        }
+        return version;
+      })();
+</script>
+	
+	<!-- smart channel ���� -->
+	<script async src="https://ssl.pstatic.net/tveta/libs/glad/prod/gfp-core.js">
+		</script>
+	<script type="text/javascript">
+		(function(){
+			if (ieVersion === -1 || ieVersion > 10) {
+				window.gladsdk = window.gladsdk || { cmd: [] };
+
+				gladsdk.cmd.push(function() {
+						gladsdk.defineAdSlot({
+							adUnitId: "p_stock",
+							adSlotElementId: "_SmartChannelTopBanner",
+							uct: "KR",
+							customParam: {
+								calp: 
+									
+									
+									
+									
+									
+									
+									"home"
+							},
+						});
+
+
+
+						gladsdk.addEventListener(gladsdk.event.AD_LOADED, function(ad) {
+							//console.log(gladsdk.event.AD_LOADED);
+						});
+						gladsdk.addEventListener(gladsdk.event.AD_CLICKED, function(ad) {
+							//console.log(gladsdk.event.AD_CLICKED);
+						});
+						gladsdk.addEventListener(gladsdk.event.AD_IMPRESSED, function(ad) {
+							//console.log(gladsdk.event.AD_IMPRESSED);
+						});
+						gladsdk.addEventListener(gladsdk.event.ERROR, function(ad, error) {
+							//TODO: ���� �α�ó��
+							//console.log(gladsdk.event.ERROR);
+						});
+					});
+			}
+		})();
+	</script>
+	
+
+	<link rel="shortcut icon" href="https://www.naver.com/favicon.ico" type="image/x-icon">
+	
+	<script type="text/javascript">
+    (function(){
+        var sUserAgent = navigator.userAgent;
+        if(/iPhone|iPad/.test(sUserAgent)){
+            document.write(
+                [
+					'<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://ssl.pstatic.net/static/nfinance/ico/2018_ios_120X120_iphone.png" />',
+					'<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://ssl.pstatic.net/static/nfinance/ico/2018_ios_152x152_ipad.png" />',
+					'<link rel="apple-touch-icon-precomposed" sizes="167x167" href="https://ssl.pstatic.net/static/nfinance/ico/2018_ios_167x167_ipad_pro.png" />',
+					'<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://ssl.pstatic.net/static/nfinance/ico/2018_ios_180x180_iphone.png" />'
+                ]
+                .join('\n')
+            );
+        }
+
+        if(/Android/.test(sUserAgent)){
+            document.write(
+                [
+                    '<link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://ssl.pstatic.net/static/nfinance/ico/2018_android_72x72_xxxhpdi.png" />',
+                    '<link rel="apple-touch-icon-precomposed" sizes="96x96" href="https://ssl.pstatic.net/static/nfinance/ico/2018_android_96x96_xxxhpdi.png" />',
+                    '<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://ssl.pstatic.net/static/nfinance/ico/2018_android_144x144_xxxhpdi.png" />',
+                    '<link rel="apple-touch-icon-precomposed" sizes="192x192" href="https://ssl.pstatic.net/static/nfinance/ico/2018_android_192x192_xxxhpdi.png" />'
+				]
+				.join('\n')
+			);
+        }
+    })();
+    </script>
+</head>
+
+
+
+
+<body onload='getGNB();'>
+
+
+
+<script type="text/javascript">
+
+	var nclk_evt = 3;
+	nclk_do();
+</script>
+
+
+<script type="text/javascript">
+
+
+
+
+
+
+
+var nsc="finance.stockend";
+
+
+var ccsrv="cc.naver.com";
+
+
+	
+	
+	var gnb_service='finance';
+	
+
+
+var gnb_logout=document.URL; //GNB���� �α׾ƿ� �� redirect �� URL
+var gnb_searchbox='off'; //�̴� �˻�â�� on ���� off ����. default�� off
+var gnb_shortnick='off'; //�г��� ������(10��)�� on���� off ����. default�� off.
+
+
+var gnb_naverme_layer_open_callback = function(){
+	   var naverLayerSize = gnbNaverMeLayer.getLayerSize();
+		
+		var me_layers = document.getElementById("me_layers");
+		me_layers.width=naverLayerSize.width;
+		me_layers.height=naverLayerSize.height;};
+
+var gnb_naverme_layer_close_callback = function(){
+		
+			var me_layers = document.getElementById("me_layers");
+			me_layers.width="0";
+			me_layers.height="0";};
+</script>
+
+
+<div id="u_skip">
+	<a href="#menu" tabindex="1"><span>���� �޴��� �ٷΰ���</span></a>
+
+	
+		<a href="#middle" tabindex="2"><span>�������� �ٷΰ���</span></a>
+	
+	
+
+</div>
+
+
+<div id="header">
+	<div class="snb_area">
+		<div class="snb_inner">
+			<div id="gnb_area">
+				<div id="gnb">
+					<script charset="EUC-KR" type="text/javascript">
+					var gnb_service = "gnbtest";
+                    var gnb_template = location.protocol == "http:" ? "gnb_quirks_euckr" : "gnb_utf8" ;
+					var gnb_dark = false;
+					var gnb_brightness = 1;
+					var gnb_logout=encodeURIComponent(location.href);
+					var gnb_one_naver = 1;
+					</script>
+					
+						
+						
+							<script type="text/javascript" charset="utf-8" src="https://ssl.pstatic.net/static.gn/templates/gnb_utf8.nhn?20220518">
+                    		</script>
+						
+					
+				</div>
+			</div>
+
+			<div class="sta">
+				<h1 class="logo"> <a href="https://www.naver.com/" class="logo_naver" onClick="clickcr(this, 'STA.naver', '', '', event);"><span class="blind">���̹�</span></a>
+				<a href="/" class="logo_service" onClick="clickcr(this, 'STA.finance', '', '', event);"><span class="blind">����</span></a> </h1>
+				<form name="search" action="/search/search.naver"  method="get"
+					onsubmit="return delayed_submit(this)" style="margin:0; padding:0;">
+				<fieldset>
+					<legend>�˻�</legend>
+					<div class="snb_search_box">
+						<div class="snb_search_box_sub">
+							<input id="stock_items" type="text" title="�˻�" name="query" value="�����&middot;������ �Է�" accesskey="s" class="snb_search_text snb_default" autocomplete="off">
+							<a id="nautocomplete" href="#" onclick="return false" class="btn_arrow"><span class="blind">�ڵ��ϼ� ��ġ��</span></a>
+						</div>
+						<div class="auto_area">
+							<h2 class="blind">�ڵ��ϼ�</h2>
+							<div id="autoFrame" style="display: none;">
+								<div class="wrap" id="atcmp" style="display:none;">
+									<div class="wrap_in">
+										<div class="words">
+											<ul class="_resultBox">
+												<li>
+													<a href="#" onclick="clickcr(this, 'AUT.list', '', '', event); return false;" class="_au_real_list">
+														<span class="num _au_real_list">@code@</span>
+														<span class="_au_real_list">@txt@</span>
+														<span class="type _au_real_list">@market@</span>
+													</a>
+													<div style="display:none" class="_au_full">@full_txt@</div>
+													<div style="display:none" class="_au_code">@in_code@</div>
+													<div style="display:none" class="_au_name">@in_name@</div>
+													<div style="display:none" class="_au_link">@in_link@</div>
+													<div style="display:none" class="_au_market">@in_market@</div>
+												</li>
+											</ul>
+										</div>
+										<p class="func">
+											<span><a href="#" class="fire_event funoff" onclick="clickcr(this, 'AUT.x', '', '', event); smartSearch.unuse(); return false;" >��ɲ���</a></span>
+										</p>
+									</div>
+								</div>
+								<!-- ���� �ڵ��ϼ� ����� ����ϰ� ��ʴϴ� -->
+								<div class="wrap" id="atcmpIng" style="display:none;">
+									<div class="wrap_in">
+										<div class="words">
+											<p class="msg">
+												���� �ڵ��ϼ� ����� ����ϰ� ��ʴϴ�.
+											</p>
+										</div>
+										<p class="func">
+											<span><a href="#" class="fire_event funoff" onclick="clickcr(this, 'AUT.x', '', '', event); smartSearch.unuse(); return false;">��ɲ���</a></span>
+										</p>
+									</div>
+								</div>
+								<!--// ���� �ڵ��ϼ� ����� ����ϰ� ��ʴϴ� -->
+								<!-- �ڵ��ϼ� ����� Ȱ��ȭ -->
+								<div class="wrap" id="atcmpStart" style="display:none;">
+									<div class="wrap_in">
+										<div class="words">
+											<p class="msg">
+												�ڵ��ϼ� ����� Ȱ��ȭ�Ǿ����ϴ�.
+											</p>
+										</div>
+										<p class="func">
+											<span><a href="#" class="fire_event funoff"  onclick="clickcr(this, 'AUT.x', '', '', event); smartSearch.unuse(); return false;">��ɲ���</a></span>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="snb_search_btn" onclick="clickcr(this, 'STA.search', '', '', event);" alt="�˻�"><span class="blind">�˻�</span></button>
+						<a href="#" target="_blank" class="snb_search_btn-total" onclick="itegrationSearch();clickcr(this, 'STA.nx', '', '', event);return false;">���հ˻�</a>
+					</div>
+				</fieldset>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="lnb_area ">
+		<div class="lnb_inner">
+			<div id="menu">
+				<ul class="menu">
+					<li class="m1 first "><a href="/" onClick="clickcr(this, 'LNB.home', '', '', event);"><span class="tx">���� Ȩ</span></a></li>
+					<li class="m2 on"><a href="/sise/" onClick="clickcr(this, 'LNB.sise', '', '', event);"><span class="tx">��������</span></a></li>
+					<li class="m3 "><a href="/world/" onClick="clickcr(this, 'LNB.world', '', '', event);"><span class="tx">�ؿ�����</span></a></li>
+					<li class="m4 "><a href="/marketindex/" onClick="clickcr(this, 'LNB.market', '', '', event);"><span class="tx">������ǥ</span></a></li>
+					<li class="m6 "><a href="/research/" onClick="clickcr(this, 'LNB.research', '', '', event);"><span class="tx">����ġ</span></a></li>
+					<li class="m7 "><a href="/news/"><span class="tx">����</span></a></li>
+					<li class="m8 "><a href="/mystock/" onClick="clickcr(this, 'LNB.mystock', '', '', event);"><span class="tx">MY</span></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+
+	
+	<script type="text/JavaScript">
+		/* lcs ���� */
+        ;(function(){
+            var eventType = "onpageshow" in window ? "pageshow" : "load";
+            jindo.$Fn(function(){
+                lcs_do();
+            }).attach(window, eventType);
+        })();
+
+		/* �˻� �ڵ��ϼ� [ ����1 : �˻�input�� ID, ����2 : iframe �±� ID ]   */
+		// AutoComplete ����
+		var acDomain = "ac.finance.naver.com";
+        if (location.hostname.indexOf("staging-") > -1) {
+            acDomain = "staging-" + acDomain;
+        } else if (location.hostname.indexOf("dev-") > -1 || location.hostname.indexOf("localhost") > -1 || location.hostname.indexOf("local-") > -1) {
+			acDomain = "dev-" + acDomain;
+		}
+
+        var acUrl = "https://" + acDomain + "/ac";
+
+		smartSearch = new nhn.Autocomplete(
+			// InputManager ����
+			new nhn.AcInputManager(jindo.$("stock_items")),
+			// DataManager ����
+			new nhn.AcDataManager(acUrl, "jsonp", "get", {
+                    st: "111",
+                    r_lt : "111",
+                    q_enc : "euc-kr",
+                    r_enc : "euc-kr",
+                    frm: "stock"}),
+			// ViewManager ����
+			new nhn.AcStockViewManager(jindo.$("autoFrame"), jindo.$("nautocomplete"), {
+                                        strMax: 200,
+                                        listMax: [7, 2, 2],
+                                        aRedirectUrl : [
+                            			"https://finance.naver.com",
+                            			"https://finance.naver.com",
+                            			"https://finance.naver.com"]}),
+			// Autocomplete Option
+            {formId:"search", cookieDomain:location.hostname, cookieName:"NaverCommonStock"});
+
+			smartSearch.attach({
+	            onFocus: function () {
+	                var weInput = jindo.$Element('stock_items');
+	                if (weInput && weInput.hasClass("snb_default")) {
+	                        weInput.text("");
+	                        weInput.removeClass('snb_default');
+	                }
+	            }
+	        });
+
+		/* ���հ˻�  start ----->  */
+		//document.domain = 'naver.com';
+		var sSearchHintText = '���������������ȯ������������� �Է�';
+		function itegrationSearch() {
+			var query = jindo.$('stock_items').value;
+
+			if ( query == ''  || encodeURIComponent(query) == encodeURIComponent(sSearchHintText))
+			{
+				alert ( '�˻�� �Է��� �ּ���.' );
+				return;
+			}
+
+            var url = location.protocol + "//search.naver.com/search.naver?sm=sta_hty.finance&where=nexearch&ie=UTF8&query=" + encodeURIComponent(query);
+            window.open(url, "_blank");
+
+			return false;
+		}
+
+		function delayed_submit(object) {
+			if (navigator.userAgent.indexOf('MSIE') == -1) {
+				window.setTimeout(function() {stock_search(object)}, 300);
+			} else {
+				stock_search(object);
+			}
+			return false;
+		}
+
+		function stock_search (object)
+		{
+			query = object.query.value.replace(/^\s*/,'').replace(/\s*$/,'');	// trim
+			object.query.value=query;
+
+			if ( query == '' || query == sSearchHintText.replace(/^\s*/,'').replace(/\s*$/,''))
+			{
+				alert ( '�˻�� �Է��� �ּ���.' );
+				return;
+			}
+			else {
+				object.submit();
+			}
+		}
+		/* <---------- ���հ˻�  end */
+
+		function popup()
+		{
+			win = window.open('/template/group_limit_pop.jsp','finan_popup','width=569 height=278 scrollbars=no status=no');
+			win.focus();
+		}
+	</script>
+
+	<iframe id="me_layers" name="test" title="���̹��� ����" width="0" height="0" scrolling="no" frameborder="0" style="display:block;top: 22px; right: 209px; position: absolute; z-index: 15;"></iframe>
+</div>
+<div id="wrap"  >
+	
+		<div class="banner_smart">
+			<div id="_SmartChannelTopBanner">
+				<script type="text/javascript">
+				if (ieVersion === -1 || ieVersion > 10) {
+					gladsdk.cmd.push(function() {
+						gladsdk.displayAd("_SmartChannelTopBanner");
+					});
+				}
+				</script>
+			</div>
+		</div>
+	
+
+
+<script language="javascript" src="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/js/ellipse.js"></script>
+<script type="text/javascript">
+	function financialInfoCommentToggle() {
+		if(jindo.$Element(jindo.$$.getSingle("div.ly_moreifrs")).visible()) {
+			jindo.$Element(jindo.$$.getSingle("a.more_ifrs")).html("�׸� �󼼱��� ����");
+			jindo.$Element(jindo.$$.getSingle("a.more_ifrs")).removeClass("fd");
+		} else {
+			jindo.$Element(jindo.$$.getSingle("a.more_ifrs")).html("�׸� �󼼱��� �ݱ�");
+			jindo.$Element(jindo.$$.getSingle("a.more_ifrs")).addClass("fd");
+		}
+		jindo.$Element(jindo.$$.getSingle("div.ly_moreifrs")).toggle();
+	}
+
+</script>
+
+
+
+	
+	
+	
+	
+
+<script language=javascript src='https://ssl.pstatic.net/imgstock/static.pc/20220511192542/js/recent_code.js'></script>
+<script language=javascript>addCode('300080');</script>
+<script language="JavaScript" src="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/js/summary.js"></script>
+<script language="JavaScript">fchartStatus.setChartStatus('on');</script>
+<style>
+
+.hide_chart {
+position: absolute;
+top: 0;
+left: -9999px;
+}
+</style>
+	<div id="middle" class="new_totalinfo">
+		
+
+		
+			
+			
+			
+				
+			
+		
+
+		
+			
+			
+				
+				
+			
+		
+
+		
+        <dl class="blind">
+	        <dt>���� �ü� ����</dt>
+	        <dd>2022�� 05�� 18�� 16�� 11�� ���� �帶��</dd>
+	        <dd>����� �ø���</dd>
+	        <dd>�����ڵ� 300080 �ڽ���</dd>
+	        <dd>���簡 39,050 ���ϴ�� �϶� 500 ���̳ʽ� 1.26 �ۼ�Ʈ</dd>
+	        <dd>���ϰ� 39,550</dd>
+	        <dd>�ð� 39,600</dd>
+	        <dd>���� 40,050</dd>
+	        <dd>���Ѱ� 51,400</dd>
+	        <dd>���� 38,200</dd>
+	        <dd>���Ѱ� 27,700</dd>
+	        <dd>�ŷ��� 13,039</dd>
+	        <dd>�ŷ���� 509�鸸</dd>
+        </dl>
+        
+
+		<div class="h_company">
+		 	<div class="wrap_company">
+				<h2><a href="#" onClick="clickcr(this, 'sop.title', '', '', event);window.location.reload();">�ø���</a></h2>
+
+				<div class="description">
+					<span class="code">300080</span>
+					
+					
+						<img src="https://ssl.pstatic.net/imgstock/item_renewal/btn_kosdaq.gif" width="33" height="16" alt="�ڽ���" class="kosdaq">
+					
+					
+					<span class="blind">��¥</span>
+					<span id="time">
+					
+						
+						
+						
+							<em class="date">2022.05.18 <span>����(�帶��)</span></em>
+						
+					
+					</span>
+
+					<em class="realtime">
+						<span class="blind">�ǽð�</span>
+					</em>
+						
+						
+							
+							<em class="summary">
+						
+							<a href="#" onclick="togglePannel('summary_lyr'); return false;"></a>
+							
+							<span class="blind">�������</span>
+							<div id="summary_lyr" class="summary_lyr" style="display:none;top:22px;left:0">
+								<iframe id="summary_ifr" name="summary_ifr" width="410" height="" src="" scrolling="no" frameborder="0" style="position:absolute;left:0;top:-2;z-index:20"></iframe>
+								<div id="summary_info" class="summary_info">
+									<h4>�������</h4>
+									
+										<p>����� 2012�� 8�� 24�Ͽ� �����Ǿ�����, �ֿ����� ��� ������ �Ǹ� �� �÷��� ���� ������� �����Ǿ� ����.</p>
+									
+									
+										<p>Ư�� �÷����� ���� ������ ����ġ(orpus)�� �������� �� �˼� ������ ���� ������ �� ��� �����͸� �ʿ�� �ϴ� ���� ������� �Ǵ� IT ��� �� �پ��� ������� ��� �Ǹ��ϴ� ����� �����ϰ� ����.</p>
+									
+				            		
+										<p>����� �ֿ� ����ܿ��� �÷�������� �з��Ǵ� ���� ������ ���� ���� ����� �����ϰ� ����.</p>
+									
+									
+									
+									<div class="txt_notice">��ó : �����ذ��̵�</div>
+										<div class="btn_area_top">
+											<a href="#" onclick="hidePannel('summary_lyr'); return false;"><img src="https://ssl.pstatic.net/static/nfinance/img/btn_close.gif" alt="�ݱ�" width="11" height="11"></a>
+										</div>
+									<div class="bg_btm"></div>
+								</div>
+								<span class="bg_lt"></span>
+								<span class="bg_rt"></span>
+								<div class="bu_arrow"></div>
+							</div>
+						</em>
+						
+						
+						
+						
+						
+			</div>
+		</div>
+
+		<div class="quick">
+			<p>
+				<a href="#" class="snb_top1" onClick="clickcr(this,'sop.2','','',event);"><span class="blind">MY STOCK �߰�</span></a>
+				<a href="javascript:quickorder('on')" class="snb_top3" onClick="clickcr(this,'sop.3','','',event);"><span class="blind">�����ֹ�</span></a>
+			</p>
+			
+			<div class="ly_lstmove blind NE=a:sop*m">
+				<span class="bg"></span>
+				<div class="txt _ly_group">
+					<div class="bx_sel scr_white2 _ly_group_list">
+						<ul></ul>
+					</div>
+					<div class="bx_sel _ly_group_blank" style="display:none;">
+						<p class="txt_inner type7">�߰��� �׷��� �����ϴ�.<br>�׷��� �߰����ּ���.</p>
+					</div>
+					<p class="rgt"><button type="button" class="btn_spr btn_groupadd2 NPI=a:add"><span class="blind">�׷��߰�</span></button></p>
+					<p>
+						<button type="button" class="btn_spr btn_cfm2 _btn_ok NPI=a:confirm"><span class="blind">Ȯ��</span></button>
+						<button type="button" class="btn_spr btn_clse2 _btn_cancel NPI=a:close"><span class="blind">�ݱ�</span></button>
+					</p>
+				</div>
+				<div class="txt _ly_message" style="display:none;">
+				</div>
+			</div>
+			
+
+	        
+            <div class="layer_quick_order" id="quickOrderArea" style="display:none">
+                <div class="content">
+                    <h5>���̹� �ֽİŷ�����<br>���� �ֹ��� ���͵帳�ϴ�!</h5>
+                    <ul>
+                    <li>�� ���񽺴� �������� ���� �ֹ��� ���� ����<br><span>���ǻ��� �α����� ����</span>�ص帮�� �ֽ��ϴ�.</li>
+                    <li>�������� �����ϰ� ��� ���ǻ縦 Ŭ���� ��<br><span>���ǻ��� ���̵�, ��й�ȣ, ������������ �ֹ�</span>��<br>�Ͻ� �� �ֽ��ϴ�. </li>
+                    <li>���ǻ� �α��� ���� �ý��� ������ �߻��ϸ�,<br><span>���ǻ� �������ͷ� ���� ����</span> �Ͻñ� �ٶ��ϴ�.   </li>
+                    <li>���̹��� ���ǻ� ������ �ý��� ��ֿ� ����<br>���� å���� ���� �ʽ��ϴ�. </li>
+                    </ul>
+                    
+                    <div class="ci_area">
+                    	<div id="quickOrderCiBanner0"></div>
+                    	<div id="quickOrderCiBanner1"></div>
+                    	<div id="quickOrderCiBanner2"></div>
+                    	<div id="quickOrderCiBanner3"></div>
+                    </div>
+                    <div class="btn_area_btm"><a href="javascript:quickorder('off')"><img src="https://ssl.pstatic.net/imgstock/item_renewal/btn_close.gif" alt="�ݱ�" width="38" height="20"></a></div>
+                    <div class="btn_area_top"><a href="javascript:quickorder('off')"><img src="https://ssl.pstatic.net/imgstock/item_renewal/btn_close_x.gif" alt="�ݱ�" width="19" height="19"></a></div>
+                </div>
+            </div>
+            
+		</div>
+
+		
+	</div>
+
+	<div class="content_wrap">
+	<div id="content">
+
+		<div id="chart_area" class="spot"><!-- chart�� �������  <div class="spot spot_short">-->
+			<div class="rate_info">
+
+				
+                <dl class="blind">
+                        <dt><strong>�ø���</strong></dt>
+                        <dd>�����ǽü� 39,050 ����Ʈ</dd>
+                        <dd>500 ����Ʈ �϶�</dd>
+                        <dd>1.26% ���̳ʽ�</dd>
+                </dl>
+                
+
+				<div class="today">
+					<p class="no_today">
+						
+							
+							
+								<em class="no_down">
+							
+							
+						
+							<span class="blind">39,050</span>
+							<span class="no3">3</span><span class="no9">9</span><span class="shim">,</span><span class="no0">0</span><span class="no5">5</span><span class="no0">0</span>
+						</em>
+					</p>
+					<p class="no_exday">
+						<span class="sptxt sp_txt1">���ϴ��</span>
+						
+							
+							
+							
+							
+								<em class="no_down">
+									<span class="ico down">�϶�</span>
+							
+							
+						
+							<span class="blind">500</span>
+							<span class="no5">5</span><span class="no0">0</span><span class="no0">0</span>
+						</em>
+						<span class="bar">l</span>
+						
+							
+							
+								<em class="no_down">
+									<span class="ico minus">-</span>
+							
+							
+						
+							<span class="blind">1.26</span>
+							<span class="no1">1</span><span class="jum">.</span><span class="no2">2</span><span class="no6">6</span>
+							<span class="per">%</span>
+						</em>
+					</p>
+				</div>
+				<table summary="�ֿ� �ü�(��������, �ð�����, �ŷ���, �ŷ����)�� �����մϴ�." class="no_info">
+				<caption>�ֿ� �ü�</caption>
+				<colgroup><col><col width="214"><col width="157"></colgroup>
+				<tr>
+					<td class="first">
+						<span class="sptxt sp_txt2">����</span>
+						<em>
+							<span class="blind">39,550</span>
+							<span class="no3">3</span><span class="no9">9</span><span class="shim">,</span><span class="no5">5</span><span class="no5">5</span><span class="no0">0</span>
+						</em>
+					</td>
+					<td>
+						<span class="sptxt sp_txt4">����</span>
+						
+							
+							
+								
+									
+									<em class="no_up">
+									
+									
+								
+							
+						
+						
+							
+							<span class="blind">40,050</span><span class="no4">4</span><span class="no0">0</span><span class="shim">,</span><span class="no0">0</span><span class="no5">5</span><span class="no0">0</span>
+						
+						</em>
+						<span class="sptxt sp_txt6">(���Ѱ�</span>
+						<em class="no_cha">
+							
+								
+								<span class="blind">51,400</span><span class="no5">5</span><span class="no1">1</span><span class="shim">,</span><span class="no4">4</span><span class="no0">0</span><span class="no0">0</span>
+							
+						</em>
+						<span class="sptxt sp_txt8">)</span>
+					</td>
+					<td>
+						<span class="sptxt sp_txt9">�ŷ���</span>
+						<em>
+							<span class="blind">13,039</span>
+							<span class="no1">1</span><span class="no3">3</span><span class="shim">,</span><span class="no0">0</span><span class="no3">3</span><span class="no9">9</span>
+						</em>
+					</td>
+				</tr>
+				<tr>
+					<td class="first">
+						<span class="sptxt sp_txt3">�ð�</span>
+						
+							
+							
+								
+									
+									<em class="no_up">
+									
+									
+								
+							
+						
+						
+							
+							<span class="blind">39,600</span><span class="no3">3</span><span class="no9">9</span><span class="shim">,</span><span class="no6">6</span><span class="no0">0</span><span class="no0">0</span>
+						
+						</em>
+					</td>
+					<td>
+						<span class="sptxt sp_txt5">����</span>
+						
+							
+							
+								
+									
+									
+									<em class="no_down">
+									
+								
+							
+						
+						
+							
+							<span class="blind">38,200</span><span class="no3">3</span><span class="no8">8</span><span class="shim">,</span><span class="no2">2</span><span class="no0">0</span><span class="no0">0</span>
+						
+						</em>
+						<span class="sptxt sp_txt7">(���Ѱ�</span>
+						<em class="no_cha">
+							
+								
+								<span class="no2">2</span><span class="no7">7</span><span class="shim">,</span><span class="no7">7</span><span class="no0">0</span><span class="no0">0</span>
+							
+						</em>
+						<span class="sptxt sp_txt8">)</span>
+					</td>
+					<td>
+						<span class="sptxt sp_txt10">�ŷ����</span>
+						<em>
+						
+							
+							
+								<span class="blind">509</span>
+								<span class="no5">5</span><span class="no0">0</span><span class="no9">9</span>
+							
+						
+						</em>
+						<span class="sptxt sp_txt11">�鸸</span>
+					</td>
+				</tr>
+				</table>
+			</div>
+			<div class="chart">
+				<p class="blind">���� �ü� ��Ʈ</p>
+					<div class="chart_control_area">
+						<dl class="line">
+							<dt>����Ʈ</dt>
+							<dd>
+								<ul>
+									<li class="day"><a href="#" class="on" onclick="showChart('day')">1��</a></li>
+									<li class="week"><a href="#" onclick="showChart('week')">1����</a></li>
+									<li class="month3"><a href="#" onclick="showChart('month3');">3����</a></li>
+									<li class="year"><a href="#" onclick="showChart('year');">1��</a></li>
+									<li class="year3"><a href="#" onclick="showChart('year3');">3��</a></li>
+									<li class="year5"><a href="#" onclick="showChart('year5');">5��</a></li>
+									<li class="year10"><a href="#" onclick="showChart('year10');">10��</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl class="bar">
+							<dt>����Ʈ</dt>
+							<dd>
+								<ul>
+									<li class="day"><a href="#" onclick="showBarChart('day');">�Ϻ�</a></li>
+									<li class="week"><a href="#" onclick="showBarChart('week');">�ֺ�</a></li>
+									<li class="month"><a href="#" onclick="showBarChart('month');">����</a></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+					<h5 class="blind">�̹��� ��Ʈ</h5>
+					<img id="img_chart_area" src="https://ssl.pstatic.net/imgfinance/chart/item/area/day/300080.png?sidcode=1652868192916" width="700" height="289" alt="�̹��� ��Ʈ" onerror="this.src='https://ssl.pstatic.net/imgstock/chart3/world2008/error_700x289.png'">
+			</div>
+			<a href="javascript:fchartStatus.showChartArea('300080', '%C7%C3%B8%AE%C5%E4', 'false')" class="btn_close" onClick="clickcr(this,'sop.toggle','','',event);">
+				<div id="btn_close">
+					
+						<img src="https://ssl.pstatic.net/imgstock/item_renewal/btn_lay_close.gif" alt="��Ʈ�ݱ�" width="45" height="11">
+						
+					
+				</div>
+			</a>
+		</div>
+
+<script type="text/template" id="summaryTpl">
+	<div class="today">
+		<p class="no_today">
+			{if rf == 1 || rf == 2}
+				<em class="no_up">
+			{elseif rf == 4 || rf == 5}
+				<em class="no_down">
+			{else}
+				<em class="X">
+			{/if}
+			{js numberFont(changeNumberFormat(=nv))}
+			</em>
+		</p>
+		<p class="no_exday">
+			<span class="sptxt sp_txt1">���ϴ��</span>
+			{if rf == 1}
+					<em class="no_up">
+						<span class="ico up_price">���Ѱ�</span>
+			{elseif rf == 2}
+					<em class="no_up">
+						<span class="ico up">���</span>
+			{elseif rf == 4}
+					<em class="no_down">
+						<span class="ico down_price">���Ѱ�</span>
+			{elseif rf == 5}
+					<em class="no_down">
+						<span class="ico down">�϶�</span>
+			{else}
+					<em class="X">
+						<span class="ico sam">����</span>
+			{/if}
+			{js numberFont(changeNumberFormat(=cv))}
+			</em>
+
+			<span class="bar">l</span>
+			{if rf == 1 || rf == 2}
+					<em class="no_up">
+						<span class="ico plus">+</span>
+			{elseif rf == 4 || rf == 5}
+					<em class="no_down">
+						<span class="ico minus">-</span>
+			{else}
+					<em class="X">
+			{/if}
+			{if cr != null}
+					{js numberFont(changeNumberFormat(=cr.toFixed(2)))}
+			{/if}
+				<span class="per">%</span>
+			</em>
+		</p>
+	</div>
+	<table summary="�ֿ� �ü�(��������, �ð�����, �ŷ���, �ŷ����)�� �����մϴ�." class="no_info">
+	<caption>�ֿ� �ü�</caption>
+	<colgroup><col><col width="214"><col width="157"></colgroup>
+	<tr>
+		<td class="first">
+			<span class="sptxt sp_txt2">����</span>
+			<em>
+                {if sv == 0}
+				{js numberFont(changeNumberFormat(=pcv))}
+                {else}
+				{js numberFont(changeNumberFormat(=sv))}
+                {/if}
+			</em>
+		</td>
+		<td>
+			<span class="sptxt sp_txt4">����</span>
+			{if tyn == "Y"}
+				<em>
+			{else}
+				{if hv == 0}
+				<em>
+				{elseif pcv < hv}
+				<em class="no_up">
+				{elseif pcv > hv}
+				<em class="no_down">
+				{else}
+				<em>
+				{/if}
+			{/if}
+			{if ms == "PREOPEN"}
+				{js numberFont(0)}
+			{else}
+				{js numberFont(changeNumberFormat(=hv))}
+			{/if}
+			</em>
+			<span class="sptxt sp_txt6">(���Ѱ�</span>
+			<em class="no_cha">
+				{if ms == "PREOPEN"}
+					{js numberFont(0)}
+				{else}
+					{js numberFont(changeNumberFormat(=ul))}
+				{/if}
+			</em>
+			<span class="sptxt sp_txt8">)</span>
+		</td>
+		<td>
+			<span class="sptxt sp_txt9">�ŷ���</span>
+			<em>
+				{js numberFont(changeNumberFormat(=aq))}
+			</em>
+		</td>
+	</tr>
+	<tr>
+		<td class="first">
+			<span class="sptxt sp_txt3">�ð�</span>
+			{if tyn == "Y"}
+				<em>
+			{else}
+				{if ov == 0}
+				<em>
+				{elseif pcv < ov}
+				<em class="no_up">
+				{elseif pcv > ov}
+				<em class="no_down">
+				{else}
+				<em>
+				{/if}
+			{/if}
+			{if ms == "PREOPEN"}
+				{js numberFont(0)}
+			{else}
+				{js numberFont(changeNumberFormat(=ov))}
+			{/if}
+			</em>
+		</td>
+		<td>
+			<span class="sptxt sp_txt5">����</span>
+			{if tyn == "Y"}
+				<em>
+			{else}
+				{if lv == 0}
+				<em>
+				{elseif pcv < lv}
+				<em class="no_up">
+				{elseif pcv > lv}
+				<em class="no_down">
+				{else}
+				<em>
+				{/if}
+			{/if}
+			{if ms == "PREOPEN"}
+				{js numberFont(0)}
+			{else}
+				{js numberFont(changeNumberFormat(=lv))}
+			{/if}
+			</em>
+			<span class="sptxt sp_txt7">(���Ѱ�</span>
+			<em class="no_cha">
+				{if ms == "PREOPEN"}
+					{js numberFont(0)}
+				{else}
+					{js numberFont(changeNumberFormat(=ll))}
+				{/if}
+			</em>
+			<span class="sptxt sp_txt8">)</span>
+		</td>
+		<td>
+			<span class="sptxt sp_txt10">�ŷ����</span>
+			<em>
+				{js numberFont(changeNumberFormat((=aa/1000000).toFixed(0)))}
+			</em>
+			<span class="sptxt sp_txt11">�鸸</span>
+		</td>
+	</tr>
+	</table>
+</script>
+
+<script type="text/javascript">
+var pollingInterval = 2000;
+var timer = null;
+var pollingAjax = null;
+var itemcodes = '';
+
+var startTimer = function() {
+	clearTimer();
+	timer = setInterval('doPolling()', pollingInterval);
+}
+
+var clearTimer = function() {
+	if (pollingAjax) {
+		pollingAjax.abort();
+		pollingAjax = null;
+	}
+
+	timer = window.clearInterval(timer);
+}
+
+var doPolling = function() {
+	var pollingApiUrl = "https://polling.finance.naver.com/api/realtime?query=SERVICE_ITEM:" + "300080"
+
+	if (requestType == 'recent' && itemcodes != "") {
+		pollingApiUrl += "|" + "SERVICE_RECENT_ITEM:" + itemcodes;
+	} else if (requestType == 'mystock' && itemcodes != ""){
+		pollingApiUrl += "|" + "SERVICE_MYSTOCK_ITEM:" + itemcodes;
+	}
+
+	pollingAjax = jindo.$Ajax(pollingApiUrl, {
+		type : 'jsonp',
+		jsonp_charset : "euc-kr",
+		onload : function(response) {
+			if(response != null && response.readyState() == 4) {
+				refreshQuote(response.json());
+				startTimer();
+			}
+		},
+		timeout : 2,
+		ontimeout : function() {
+			startTimer();
+		},
+		async : true
+	});
+	pollingAjax.request();
+}
+
+function displayTime(ms, time) {
+	var result;
+
+	var utcDate = new Date(time);
+	utcDate.setMinutes(utcDate.getMinutes() + utcDate.getTimezoneOffset());
+	utcDate.setHours(utcDate.getHours() + 9);
+
+	var oDate = jindo.$Date(utcDate);
+
+	if (ms == "PREOPEN") {
+		closeDate = oDate.format('Y.m.d')
+		result = '<em class="date">' + oDate.format('Y.m.d') + ' <span>����(������)</span></em> ';
+	} else if (ms == "CLOSE") {
+		result = '<em class="date">' + closeDate + ' <span>����(�帶��)</span></em> ';
+	} else {
+		closeDate = oDate.format('Y.m.d')
+		result = '<em class="date">' + oDate.format('Y.m.d H:i') + ' <span>����(����)</span></em> ';
+	}
+
+	return result;
+}
+
+/**
+ * ������� �������� ���� ��, NAV �� ����
+ */
+function refreshEtfNav(etfNav) {
+	var elEtfNav = jindo.$Element(jindo.$$.getSingle("#on_board_last_nav"));
+	if (elEtfNav != null) {
+		if (etfNav != null) {
+			elEtfNav.html("<em><strong>" + changeNumberFormat(etfNav.toFixed(0)) + "</strong></em>");
+		} else {
+			elEtfNav.html("<em><strong>N/A</strong></em>");
+		}
+	}
+}
+
+function refreshInvestmentSummary(nv) {
+	if (!(false && false && false)) {
+		return;
+	}
+
+	var averageBuyingPrice = 0;
+	var holdingShares = 0;
+
+	var elEvaluationProfitAmount = jindo.$Element(jindo.$$.getSingle("#evaluation_profit_amount"));
+	// �򰡼��� = (nv - ��ո��԰�) * ��������
+	var evaluationProfitAmount = (nv - 0) * 0;
+	// �򰡼��ͷ� = �򰡼��� / (��ո��԰� * ��������) * 100
+	var evaluationProfitRate = evaluationProfitAmount / (0 * 0) * 100;
+
+	var sPointClass = "";
+	var sSign = "";
+	if (evaluationProfitAmount > 0) {
+		sPointClass = "f_up";
+		sSign = "+";
+	} else {
+		sPointClass = "f_down";
+		sSign = "";
+	}
+
+	var evaluationProfitAmoutText = ""
+	if (evaluationProfitAmount > 10000000000) {
+		var evaluationProfitAmountDivideBillion = evaluationProfitAmount / 100000000;
+		evaluationProfitAmountText = "<em>" + sSign + changeNumberFormat(evaluationProfitAmountDivideBillion.toFixed(0)) + "��</em>";
+	} else {
+		evaluationProfitAmountText = "<em>" + sSign + changeNumberFormat(evaluationProfitAmount) + "</em>";
+	}
+
+	if (elEvaluationProfitAmount != null) {
+		elEvaluationProfitAmount.removeClass("f_up");
+		elEvaluationProfitAmount.removeClass("f_down");
+		elEvaluationProfitAmount.addClass(sPointClass);
+		elEvaluationProfitAmount.html(evaluationProfitAmountText);
+	}
+
+	var elEvaluationProfitRate = jindo.$Element(jindo.$$.getSingle("#evaluation_profit_rate"));
+	if (elEvaluationProfitRate != null) {
+
+		elEvaluationProfitRate.removeClass("f_up");
+		elEvaluationProfitRate.removeClass("f_down");
+		elEvaluationProfitRate.addClass(sPointClass);
+
+		elEvaluationProfitRate.html("<em>" + sSign + changeNumberFormat(evaluationProfitRate.toFixed(2)) + "%</em>");
+	}
+}
+
+
+function refreshCompanyValue(json) {
+	var sPer = "N/A";
+	var sKrxPer = "N/A";
+	/* if ((json.per !== undefined) && (json.per !== null)) {
+		sPer = converToFixedPointNotation(json.per, 2);
+	}
+
+	jindo.$A(jindo.$$("#_per")).forEach(function(v) {
+		jindo.$Element(v).text(sPer);
+	}, this); */
+
+	if ((json.eps !== undefined) && (json.eps !== null)) {
+		sPer = converToFixedPointNotation(json.nv / json.eps, 2);
+	}
+
+	jindo.$A(jindo.$$("#_per")).forEach(function(v) {
+		jindo.$Element(v).text(sPer);
+	}, this);
+
+	if ((json.keps !== undefined) && (json.keps !== null)) {
+		sKrxPer = converToFixedPointNotation(json.nv / json.keps, 2);
+	}
+
+	jindo.$A(jindo.$$("#krx_per")).forEach(function(v) {
+		jindo.$Element(v).text(sKrxPer);
+	}, this);
+
+	var sCnsPer = "N/A";
+	if ((json.cnsEps !== undefined) && (json.cnsEps !== null)) {
+		sCnsPer = converToFixedPointNotation(json.nv / json.cnsEps, 2);
+	}
+
+	jindo.$A(jindo.$$("#_cns_per")).forEach(function(v) {
+		jindo.$Element(v).text(sCnsPer);
+	}, this);
+
+	var sPbr = "N/A";
+	if ((json.bps !== undefined) && (json.bps !== null)) {
+		var bps = converToFixedPointNotation(json.bps, 0)
+		sPbr = converToFixedPointNotation(json.nv / bps, 2);
+	}
+
+	jindo.$A(jindo.$$("#_pbr")).forEach(function(v) {
+		jindo.$Element(v).text(sPbr);
+	}, this);
+
+	var sDvr = "N/A";
+	if ((json.dv !== undefined) && (json.dv !== null)) {
+		var dv = converToFixedPointNotation(json.dv, 0)
+		sDvr = converToFixedPointNotation((dv * 100)/ json.nv, 2);
+	}
+
+	jindo.$A(jindo.$$("#_dvr")).forEach(function(v) {
+		jindo.$Element(v).text(sDvr);
+	}, this);
+}
+
+function refreshQuote(res) {
+	if(res != null && res.resultCode == 'success') {
+		pollingInterval = res.result.pollingInterval;
+
+		for (var index = 0 ; index < res.result.areas.length ; index++) {
+			if (res.result.areas[index].name == "SERVICE_ITEM") {
+				var ms = "NOT DEFINED";
+				ms = res.result.areas[index].datas[0].ms;
+				document.getElementById("time").innerHTML = displayTime(ms, res.result.time);
+
+				jindo.$Element(jindo.$$.getSingle("#chart_area .rate_info")).html(jindo.$Template("summaryTpl").process(res.result.areas[index].datas[0]));
+
+				refreshInvestmentSummary(res.result.areas[index].datas[0].nv);
+				refreshEtfNav(res.result.areas[index].datas[0].nav);
+				refreshCompanyValue(res.result.areas[index].datas[0]);
+			} else if (res.result.areas[index].name == "SERVICE_RECENT_ITEM") {
+				renderRecentAreaRealtime("recent", res.result.areas[index]);
+			} else if (res.result.areas[index].name == "SERVICE_MYSTOCK_ITEM") {
+				renderRecentAreaRealtime("mystock", res.result.areas[index]);
+			}
+		}
+	}
+}
+
+function numberFont(value) {
+	value = value + "";
+	var result = "";
+
+	for (i = 0; i < value.length; i++) {
+		var tmpChar = value.charAt(i);
+
+		result += '<span class="';
+		if (tmpChar == ".") {
+			result += "jum";
+		} else if (tmpChar == ",") {
+			result += "shim";
+		} else {
+			result += "no" + tmpChar;
+		}
+		result += '">' + tmpChar + '</span>';
+	}
+
+	return result;
+}
+
+function changeNumberFormat(vNumber){
+	var sUnderNumber = "";
+	var sNumberString = vNumber || 0;
+	sNumberString = (typeof sNumberString != "String") ? String(sNumberString) : sNumberString;
+
+	if(sNumberString.indexOf(".") > -1){
+		var aNumber = sNumberString.split(".");
+		sNumberString = aNumber[0];
+		sUnderNumber = "." + aNumber[1];
+	}
+
+	return sNumberString.replace(/(\d)(?=(\d{3})+$)/igm, "$1,") + sUnderNumber;
+}
+
+function converToFixedPointNotation (nNumber, nDecimalLength){
+	return parseFloat(nNumber).toFixed(nDecimalLength || 0);
+}
+
+// 1�и��� ���� ������Ʈ
+var updateInformationInterval = 60000;
+var informationTimer = null;
+var oUpdateAjax = null;
+
+var startInformationTimer = function() {
+	clearInformationTimer();
+	informationTimer = setInterval('doUpdateInformation()', updateInformationInterval);
+}
+
+var clearInformationTimer = function() {
+	if (oUpdateAjax) {
+		oUpdateAjax.abort();
+		oUpdateAjax = null;
+	}
+
+	informationTimer = window.clearInterval(informationTimer);
+}
+
+var doUpdateInformation = function() {
+	var sApiUrl = "https://api.finance.naver.com/service/itemSummary.naver?itemcode=300080"
+
+	oUpdateAjax = jindo.$Ajax(sApiUrl, {
+		type : 'jsonp',
+		jsonp_charset : "utf-8",
+		onload : function(response) {
+			if(response != null && response.readyState() == 4) {
+				var json = response.json();
+
+				if (json.now == undefined) {
+					startInformationTimer();
+					return;
+				}
+
+				var sMarketSum = (json.marketSum + "");
+				sMarketSum = sMarketSum.substring(0, sMarketSum.length - 2);
+				sMarketSum = changeNumberFormat(sMarketSum);
+
+				var sPer = changeNumberFormat(json.per);
+				var sEps = changeNumberFormat(json.eps);
+				var sNowVal = changeNumberFormat(json.now);
+				var sDiff = changeNumberFormat(json.diff);
+				var sRate = changeNumberFormat(json.rate) + "%";
+				var sQuant = changeNumberFormat(json.quant);
+				var sAmount = changeNumberFormat(json.amount);
+				var sHigh = changeNumberFormat(json.high);
+				var sLow = changeNumberFormat(json.low);
+
+				if (sRate == "0%") {
+					sRate = "0.00%";
+				}
+
+				if (json.per == undefined) {
+					sPer = "N/A";
+				}
+
+				if (json.eps == undefined) {
+					sEps = "N/A";
+				}
+
+				jindo.$A(jindo.$$("#_sise_market_sum")).forEach(function(v) {
+					jindo.$Element(v).text(sMarketSum);
+				}, this);
+
+				jindo.$A(jindo.$$("#_sise_per")).forEach(function(v) {
+					jindo.$Element(v).text(sPer);
+				}, this);
+
+				jindo.$A(jindo.$$("#_sise_eps")).forEach(function(v) {
+					jindo.$Element(v).text(sEps);
+				}, this);
+
+				jindo.$A(jindo.$$("#_nowVal")).forEach(function(v) {
+					jindo.$Element(v).text(sNowVal);
+				}, this);
+
+				jindo.$A(jindo.$$("#_diff")).forEach(function(v) {
+					var sFormat = null;
+					var sDiffToDisplay = sDiff.replace("-", "");
+
+					if (json.risefall == 1) {
+						sFormat = "<em class=\"bu_p bu_pup2\" style=\"margin:0 4px 0 0\"><span class=\"blind\">����</span></em><span class=\"tah p11 red01\">%s</span>";
+					} else if (json.risefall == 2) {
+						sFormat = "<em class=\"bu_p bu_pup\" style=\"margin:0 4px 0 0\"><span class=\"blind\">���</span></em><span class=\"tah p11 red01\">%s</span>";
+					} else if (json.risefall == 3) {
+						sFormat = "<span class=\"tah p11\">%s</span>";
+					} else if (json.risefall == 4) {
+						sFormat = "<em class=\"bu_p bu_pdn2\" style=\"margin:0 4px 0 0\"><span class=\"blind\">����</span></em><span class=\"tah p11 nv01\">%s</span>";
+					} else {
+						sFormat = "<em class=\"bu_p bu_pdn\" style=\"margin:0 4px 0 0\"><span class=\"blind\">�϶�</span></em><span class=\"tah p11 nv01\">%s</span>";
+					}
+
+					var sHtml = jindo.$S(sFormat).format(sDiffToDisplay);
+
+					jindo.$Element(v).html(sHtml);
+				}, this);
+
+				jindo.$A(jindo.$$("#_rate")).forEach(function(v) {
+					var sCss = "red01";
+					var sRateToDisplay = sRate;
+
+					if (sRate.indexOf("-") > -1) {
+						sCss = "nv01";
+					} else if (sRate.indexOf("0.00") > -1) {
+						sCss = "";
+					} else {
+						sRateToDisplay = "+" + sRateToDisplay;
+					}
+
+					var sHtml = "<span class=\"tah p11 " + sCss + "\">" + sRateToDisplay + "</span>";
+					jindo.$Element(v).html(sHtml);
+				}, this);
+
+				jindo.$A(jindo.$$("#_quant")).forEach(function(v) {
+					jindo.$Element(v).text(sQuant);
+				}, this);
+
+				jindo.$A(jindo.$$("#_amount")).forEach(function(v) {
+					jindo.$Element(v).text(sAmount);
+				}, this);
+
+				jindo.$A(jindo.$$("#_high")).forEach(function(v) {
+					jindo.$Element(v).text(sHigh);
+				}, this);
+
+				jindo.$A(jindo.$$("#_low")).forEach(function(v) {
+					jindo.$Element(v).text(sLow);
+				}, this);
+
+				startInformationTimer();
+			}
+		},
+		timeout : 2,
+		ontimeout : function() {
+			startInformationTimer();
+		},
+		async : true
+	});
+	oUpdateAjax.request();
+}
+
+var dateTime = "20220518161206";
+var closeDate = dateTime.substring(0,4) + "." + dateTime.substring(4,6) + "." + dateTime.substring(6,8);
+
+
+
+/**
+ * ������ Ÿ��(1��, ������, 3����, 1��, 3��, 5�� , 10��)�� ���� �̹��� ��Ʈ ����
+ *
+ * @param chartType ��Ʈ����(1��, ������, 3����, 1��, 3��, 5��, 10��)
+ */
+// �� ��Ʈ ����
+function showChart(target) {
+    jindo.$A(jindo.$$("dl.line dd ul li")).forEach(function(v) {
+        if (jindo.$Element(v).className() == target) {
+            jindo.$Element(v).child()[0].addClass("on");
+            jindo.$Element(jindo.$$.getSingle("#img_chart_area")).attr("src", "https://ssl.pstatic.net/imgfinance/chart/item/area/" + target + "/300080.png?sidcode=1652868192916");
+        } else {
+            jindo.$Element(v).child()[0].removeClass("on");
+        }
+    });
+
+    jindo.$A(jindo.$$("dl.bar dd ul li")).forEach(function(v) {
+        jindo.$Element(v).child()[0].removeClass("on");
+    });
+
+}
+
+/**
+ * ������ Ÿ��(�Ϻ�, �ֺ�, ����)�� ���� �̹��� ��Ʈ ����
+ *
+ * @param chartType ��Ʈ����(�Ϻ�, �ֺ�, ����)
+ */
+// �� ��Ʈ ����
+function showBarChart(target) {
+    jindo.$A(jindo.$$("dl.bar dd ul li")).forEach(function(v) {
+        if (jindo.$Element(v).className() == target) {
+            jindo.$Element(v).child()[0].addClass("on");
+            jindo.$Element(jindo.$$.getSingle("#img_chart_area")).attr("src", "https://ssl.pstatic.net/imgfinance/chart/item/candle/" + target + "/300080.png?sidcode=1652868192916");
+        } else {
+            jindo.$Element(v).child()[0].removeClass("on");
+        }
+    });
+
+    jindo.$A(jindo.$$("dl.line dd ul li")).forEach(function(v) {
+        jindo.$Element(v).child()[0].removeClass("on");
+    });
+}
+
+/**
+ * �÷��� �������� Ȯ��
+ */
+function isInstalledFlash() {
+    var aFlash = jindo.$Agent().flash();
+    var bResult = false;
+
+    if (aFlash != null && aFlash.installed) {
+        bResult = true;
+    }
+
+    return bResult;
+}
+
+/**
+ * �÷��� �������ο� ���� ��Ʈ ����
+ */
+function initChartArea(flashAreaClassName, htmlAreaClassName) {
+    var eFlashChartArea = jindo.$Element(jindo.$$.getSingle("." + flashAreaClassName));
+    var eImgChartArea = jindo.$Element(jindo.$$.getSingle("." + htmlAreaClassName));
+
+    if (eFlashChartArea != null && eImgChartArea != null) {
+        if (isInstalledFlash()) {
+            eImgChartArea.hide();
+        } else {
+            eFlashChartArea.hide();
+        }
+    }
+}
+
+</script>
+<script type="text/javascript">
+<!--
+jindo.$Fn(function() {
+	var itemAddLayer = new MyFinance.MyStock.ItemAddLayer(jindo.$$.getSingle('.ly_lstmove'), {
+		'LayerPosition': {
+			sPosition : "outside-bottom",
+			sAlign : "left",
+			nTop : 4,
+			nLeft : -96
+		}
+	});
+
+	jindo.$Fn(function(e) {
+		e.stopDefault();
+		itemAddLayer.open(['300080'], e.element);
+	}, this).attach(jindo.$$.getSingle('.snb_top1'), 'click');
+
+	
+}, this).attach(document, 'domready');
+//-->
+</script>
+<script type="text/javascript" src="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/js/release/commonSummary.js"></script>
+
+
+
+
+
+
+
+	
+	
+		
+			
+				
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+							
+			
+			
+			
+			
+			
+			
+		
+		
+			
+			
+			
+				<ul class="tabs_submenu tab_total_submenu"> 
+					<li class="tab_on"><a href="/item/main.naver?code=300080" class="tab1" onClick="clickcr(this,'sop.4','','',event);"><span>��������</span></a></li>
+					<li class=""><a href="/item/sise.naver?code=300080" class="tab2" onClick="clickcr(this,'sop.5','','',event);"><span>�ü�</span></a></li>
+					<li class=""><a href="/item/fchart.naver?code=300080" class="tab3" onClick="clickcr(this,'sop.6','','',event);"><span>��Ʈ</span></a></li>
+					<li class=""><a href="/item/frgn.naver?code=300080" class="tab4" onClick="clickcr(this,'sop.10','','',event);"><span>�����ں� �Ÿŵ���</span></a></li>
+					<li class=""><a href="/item/news.naver?code=300080" class="tab5" onClick="clickcr(this,'sop.7','','',event);"><span>����&middot;����</span></a></li>
+					<li class=""><a href="/item/coinfo.naver?code=300080" class="tab6" onClick="clickcr(this,'sop.9','','',event);"><span>����м�</span></a></li>
+					<li class=""><a href="/item/board.naver?code=300080" class="tab7" onClick="clickcr(this,'sop.11','','',event);"><span>������н�</span></a></li>
+					<li class=""><a href="/item/dart.naver?code=300080" class="tab8" onClick="clickcr(this,'sop.12','','',event);"><span>���ڰ���</span></a></li>
+					<li class=""><a href="/item/short_trade.naver?code=300080" class="tab9" onClick="clickcr(this,'sop.13','','',event);"><span>���ŵ���Ȳ</span></a></li>
+				</ul>
+			
+		
+	
+
+
+
+
+
+	
+	
+		<hr>
+		<h3 class="blind">��������</h3>
+		
+		<div class="section invest_trend">
+			<h4 class="h_sub sub_tit2"><span>�����ں� �Ÿŵ���</span><em style="position:relative;left:100px;font-style:normal;font-weight:normal;font-size:11px;color:#666;">�ŷ��� ���� : �Ϻ� ���� 5�� �ŷ����� ���� ���� ���� (20�� ����)</em></h4>
+			<div class="sub_section">
+				<h5 class="h_th th_di"><span>�ŷ��� ����</span></h5>
+				<table summary="�����ں� �Ÿŵ��� �ü������� ���� ǥ �� �ŷ��� ����(�ŵ�����, �ż�����, �ŷ���)�� �����մϴ�." class="tb_type1">
+					<caption>�ŷ��� ����</caption>
+					<colgroup><col><col width="80"><col width="90"><col width="80"></colgroup>
+					<thead>
+					<tr>
+						<th scope="col" class="h_th th_sale_top"><span>�ŵ�����</span></th>
+						<th scope="col" class="h_th th_deal_amount"><span>�ŷ���</span></th>
+						<th scope="col" class="h_th th_buy_top"><span>�ż�����</span></th>
+						<th scope="col" class="h_th th_deal_amount"><span>�Ű���</span></th>
+					</tr>
+					</thead>
+					<tfoot>
+					<tr>
+						<td class="left"><strong>�ܱ���������</strong></td>
+						<td>
+							<em class="f_down">1,927</em>
+						</td>
+						<td class="left">
+							
+				<em class="f_down">
+				-1,802
+				</em>
+			
+						</td>
+						<td>
+							<em class="f_up">125</em>
+						</td>
+					</tr>
+					</tfoot>
+					<tbody>
+					<tr><td class="space"></td></tr>
+					
+						<tr>
+							
+							
+						<td class="left">�Ｚ</td>
+						<td><em>5,191</em></td>
+			
+							
+						<td class="left">�̷���������</td>
+						<td><em>5,220</em></td>
+			
+						</tr>
+					
+						<tr>
+							
+							
+						<td class="left">�޸���</td>
+						<td><em>3,061</em></td>
+			
+							
+						<td class="left">Ű������</td>
+						<td><em>2,893</em></td>
+			
+						</tr>
+					
+						<tr>
+							
+							
+						<td class="left"><span class="f_down">�޸���ġ</span></td>
+						<td><em class="f_down">1,468</em></td>
+			
+							
+						<td class="left">����Ÿ����</td>
+						<td><em>1,368</em></td>
+			
+						</tr>
+					
+						<tr>
+							
+							
+						<td class="left">Ű������</td>
+						<td><em>1,286</em></td>
+			
+							
+						<td class="left">�޸���</td>
+						<td><em>1,099</em></td>
+			
+						</tr>
+					
+						<tr>
+							
+							
+						<td class="left">���ѱ�������</td>
+						<td><em>518</em></td>
+			
+							
+						<td class="left">�ѱ�����</td>
+						<td><em>656</em></td>
+			
+						</tr>
+					
+					</tbody>
+				</table>
+			</div>
+
+			<div class="sub_section right">
+				<h5 class="h_th th_fo"><span>�ܱ��� ���</span></h5>
+				<table summary="�����ں� �Ÿŵ��� �ü������� ���� ǥ �� �ܱ��� ��� ����(��¥, ����, ���Ϻ�, �ܱ���, ���)�� �����մϴ�." class="tb_type1">
+					<caption>�ܱ��� ���</caption>
+					<colgroup><col width="50"><col width="65"><col width="70"><col width="70"><col></colgroup>
+					<thead>
+					<tr>
+						<th class="h_th th_date"><span>��¥</span></th>
+						<th scope="col" class="h_th th_pass_price"><span>����</span></th>
+						<th scope="col" class="h_th th_pass_day"><span>���Ϻ�</span></th>
+						<th scope="col" class="h_th th_foreigner"><span>�ܱ���</span></th>
+						<th scope="col" class="h_th th_organ"><span>���</span></th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr><td class="space"></td></tr>
+					
+						<tr>
+							<th scope="row">05/18</th>
+							<td><em>39,050</em></td>
+							<td>
+								
+				<em class="f_down down"><span>����</span>
+				500
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="f_down">
+				-1,942
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="sam"></em>
+			
+							</td>
+						</tr>
+					
+						<tr>
+							<th scope="row">05/17</th>
+							<td><em>39,550</em></td>
+							<td>
+								
+				<em class="f_up up"><span>����</span>
+				950
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="f_down">
+				-571
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="f_up">
+				+2,371
+				</em>
+			
+							</td>
+						</tr>
+					
+						<tr>
+							<th scope="row">05/16</th>
+							<td><em>38,600</em></td>
+							<td>
+								
+				<em class="f_down down"><span>����</span>
+				150
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="f_down">
+				-4,062
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="sam"></em>
+			
+							</td>
+						</tr>
+					
+						<tr>
+							<th scope="row">05/13</th>
+							<td><em>38,750</em></td>
+							<td>
+								
+				<em class="f_up up"><span>����</span>
+				1,000
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="f_up">
+				+274
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="sam"></em>
+			
+							</td>
+						</tr>
+					
+						<tr>
+							<th scope="row">05/12</th>
+							<td><em>37,750</em></td>
+							<td>
+								
+				<em class="f_down down"><span>����</span>
+				100
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="f_down">
+				-523
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="sam"></em>
+			
+							</td>
+						</tr>
+					
+						<tr>
+							<th scope="row">05/11</th>
+							<td><em>37,850</em></td>
+							<td>
+								
+				<em class="f_up up"><span>����</span>
+				50
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="f_down">
+				-87
+				</em>
+			
+							</td>
+							<td>
+								
+				<em class="sam"></em>
+			
+							</td>
+						</tr>
+					
+
+					<tr><td class="space2"></td></tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="dummy"></div>
+			<a href="/item/frgn.naver?code=300080" class="more" onClick="clickcr(this, 'dle.7', '', '', event);">������</a>
+		</div>
+		
+		<hr>
+		
+		<div class="section new_bbs">
+			<div class="sub_section news_section">
+				<h4 class="h_sub sub_tit3"><span>��������</span></h4>
+				
+					
+						<ul>
+						
+							
+								<li>
+							<span class="txt">
+							
+								
+								
+									
+								
+							
+							<a href="/item/news_read.naver?article_id=0005152359&office_id=018&code=300080&sm=title_entity_id.basic" onClick="clickcr(this, 'dle.1', '', '1', event);">�ø���, 7.4�� �Ը� �ٱ��� ���� �뿪 ��Ź��� ü...</a>
+							
+							</span>
+									<em> 02/22</em>
+								</li>
+							
+							
+						
+							
+								<li>
+							<span class="txt">
+							
+								
+									
+								
+								
+							
+							<a href="/item/news_read.naver?article_id=0005129114&office_id=018&code=300080&sm=title_entity_id.basic" onClick="clickcr(this, 'dle.1', '', '2', event);">�ø���, 2.9��� �Ը� �ڻ��� ó��...</a>
+							<a href="/item/news.naver?code=300080&clusterId=0180005129114" class="link_relation" onClick="clickcr(this, 'dle.11', '', '', event);"><span class="bar"></span>���� <em>3</em>��</a>
+							</span>
+									<em> 01/18</em>
+								</li>
+							
+							
+						
+							
+								<li>
+							<span class="txt">
+							
+								
+								
+									
+								
+							
+							<a href="/item/news_read.naver?article_id=0001908851&office_id=016&code=300080&sm=title_entity_id.basic" onClick="clickcr(this, 'dle.1', '', '3', event);">[Ư¡��] �ø���, BNK�ڻ��� �ڱ� 100�� Ȯ���� ...</a>
+							
+							</span>
+									<em> 11/05</em>
+								</li>
+							
+							
+						
+							
+								<li>
+							<span class="txt">
+							
+								
+								
+									
+								
+							
+							<a href="/item/news_read.naver?article_id=0004873391&office_id=009&code=300080&sm=title_entity_id.basic" onClick="clickcr(this, 'dle.1', '', '4', event);">[�ڽ��� ����] �뺸���׳�ƽ / �ø���</a>
+							
+							</span>
+									<em> 11/02</em>
+								</li>
+							
+							
+						
+							
+								<li>
+							<span class="txt">
+							
+								
+								
+									
+								
+							
+							<a href="/item/news_read.naver?article_id=0004635791&office_id=008&code=300080&sm=title_entity_id.basic" onClick="clickcr(this, 'dle.1', '', '5', event);">�ø��� 10% ��� ���, ���� ��������� ���ް��</a>
+							
+							</span>
+									<em> 08/25</em>
+								</li>
+							
+							</ul><ul class="line_dot" />
+						
+							
+								<li>
+							<span class="txt">
+							
+								
+									
+								
+								
+							
+							<a href="/item/news_read.naver?article_id=0005018696&office_id=018&code=300080&sm=title_entity_id.basic" onClick="clickcr(this, 'dle.1', '', '6', event);">�ø���, ����������� 20�� �Ը� ...</a>
+							<a href="/item/news.naver?code=300080&clusterId=0180005018696" class="link_relation" onClick="clickcr(this, 'dle.11', '', '', event);"><span class="bar"></span>���� <em>3</em>��</a>
+							</span>
+									<em> 08/24</em>
+								</li>
+							
+							
+						
+							
+								<li>
+							<span class="txt">
+							
+								
+								
+									
+								
+							
+							<a href="/item/news_read.naver?article_id=0004631050&office_id=008&code=300080&sm=title_entity_id.basic" onClick="clickcr(this, 'dle.1', '', '7', event);">�ø���, ��ݱ� ����� 46���&hellip;������ 108.21% ��...</a>
+							
+							</span>
+									<em> 08/13</em>
+								</li>
+							
+							
+						
+							
+								<li>
+							<span class="txt">
+							
+								
+									
+								
+								
+							
+							<a href="/item/news_read.naver?article_id=0004832793&office_id=009&code=300080&sm=title_entity_id.basic" onClick="clickcr(this, 'dle.1', '', '8', event);">[�ڽ��� ����] �ø���</a>
+							<a href="/item/news.naver?code=300080&clusterId=0090004832793" class="link_relation" onClick="clickcr(this, 'dle.11', '', '', event);"><span class="bar"></span>���� <em>2</em>��</a>
+							</span>
+									<em> 08/02</em>
+								</li>
+							
+							
+						
+							
+								<li>
+							<span class="txt">
+							
+								
+								
+									
+								
+							
+							<a href="/item/news_read.naver?article_id=0001868027&office_id=016&code=300080&sm=title_entity_id.basic" onClick="clickcr(this, 'dle.1', '', '9', event);">����ü ������ ���ࡦ�ø��� �������� Ȯ�� �õ�</a>
+							
+							</span>
+									<em> 07/29</em>
+								</li>
+							
+							
+						
+							
+								<li>
+							<span class="txt">
+							
+								
+									
+								
+								
+							
+							<a href="/item/news_read.naver?article_id=0004983256&office_id=018&code=300080&sm=title_entity_id.basic" onClick="clickcr(this, 'dle.1', '', '10', event);">�ø���, �ѱ�����������ȸ�������...</a>
+							<a href="/item/news.naver?code=300080&clusterId=0180004983256" class="link_relation" onClick="clickcr(this, 'dle.11', '', '', event);"><span class="bar"></span>���� <em>2</em>��</a>
+							</span>
+									<em> 07/13</em>
+								</li>
+							
+							
+						
+						</ul>
+					
+
+					
+				
+				<a href="/item/news.naver?code=300080" class="more" onClick="clickcr(this, 'dle.2', '', '', event);">������</a>
+			</div>
+			<div class="sub_section right">
+				<h4 class="h_sub sub_tit4"><span>������н�</span><a href="/item/board_write_edit.naver?code=300080&mode=write" onClick="clickcr(this, 'dle.16', '', '', event);" style="position:relative;left:60px"><img src="https://ssl.pstatic.net/imgstock/item_renewal/btn_write_n.gif" alt="�۾���" width="42" height="18"></a></h4>
+				
+					
+						<ul>
+						
+							<li>
+					<span class="txt">
+						<a href="/item/board_read.naver?code=300080&nid=221595133" onClick="clickcr(this, 'dle.3', '', '1', event);">
+						����</a>
+					</span>
+								<em>05/17 10:04</em>
+							</li>
+							
+						
+							<li>
+					<span class="txt">
+						<a href="/item/board_read.naver?code=300080&nid=221564389" onClick="clickcr(this, 'dle.3', '', '2', event);">
+						���� �����̳� ����</a><em class="ea_reply">[2]</em>
+					</span>
+								<em>05/16 18:54</em>
+							</li>
+							
+						
+							<li>
+					<span class="txt">
+						<a href="/item/board_read.naver?code=300080&nid=220885826" onClick="clickcr(this, 'dle.3', '', '3', event);">
+						�϶��� ������</a><em class="ea_reply">[1]</em>
+					</span>
+								<em>05/08 23:21</em>
+							</li>
+							
+						
+							<li>
+					<span class="txt">
+						<a href="/item/board_read.naver?code=300080&nid=220885504" onClick="clickcr(this, 'dle.3', '', '4', event);">
+						������ ��ȸ�� ���� TF �ż�&hellip;�κ�?��Ÿ���� � ��</a>
+					</span>
+								<em>05/08 23:03</em>
+							</li>
+							
+						
+							<li>
+					<span class="txt">
+						<a href="/item/board_read.naver?code=300080&nid=220849569" onClick="clickcr(this, 'dle.3', '', '5', event);">
+						��)����ȸ�� ���ڳ� �� ���°� ������ ���� ��������</a>
+					</span>
+								<em>05/06 20:13</em>
+							</li>
+							
+								</ul>
+								<ul class="line_dot">
+							
+						
+							<li>
+					<span class="txt">
+						<a href="/item/board_read.naver?code=300080&nid=220820559" onClick="clickcr(this, 'dle.3', '', '6', event);">
+						������ 4��������~~</a>
+					</span>
+								<em>05/06 14:21</em>
+							</li>
+							
+						
+							<li>
+					<span class="txt">
+						<a href="/item/board_read.naver?code=300080&nid=220785078" onClick="clickcr(this, 'dle.3', '', '7', event);">
+						���̾��� </a>
+					</span>
+								<em>05/06 10:38</em>
+							</li>
+							
+						
+							<li>
+					<span class="txt">
+						<a href="/item/board_read.naver?code=300080&nid=220778981" onClick="clickcr(this, 'dle.3', '', '8', event);">
+						���� ���Ѱ� </a>
+					</span>
+								<em>05/06 10:07</em>
+							</li>
+							
+						
+							<li>
+					<span class="txt">
+						<a href="/item/board_read.naver?code=300080&nid=220741617" onClick="clickcr(this, 'dle.3', '', '9', event);">
+						1�б�����������ɴϱ�</a>
+					</span>
+								<em>05/05 14:47</em>
+							</li>
+							
+						
+							<li>
+					<span class="txt">
+						<a href="/item/board_read.naver?code=300080&nid=220349476" onClick="clickcr(this, 'dle.3', '', '10', event);">
+						�ֺ�</a>
+					</span>
+								<em>04/29 13:57</em>
+							</li>
+							
+						
+
+						</ul>
+					
+					
+				
+				<a href="/item/board.naver?code=300080" class="more" onClick="clickcr(this, 'dle.4', '', '', event);">������</a>
+			</div>
+		</div>
+		
+		<hr>
+		
+
+			
+
+			<div class="section cop_analysis">
+				<h4 class="h_sub sub_tit6"><span>��������м�</span></h4>
+				
+					
+						<div class="sub_section">
+							<table summary="��������м��� ����ǥ�̸� �ֿ��繫������ �ֱ� ���� ����, �б� ������ ���� ������ �����մϴ�." class="tb_type1 tb_num tb_type1_ifrs">
+								<caption>��������м� ���̺�</caption>
+								<colgroup>
+									<col width="86">
+									<col width="59">
+									<col width="59">
+									<col width="59">
+									<col width="62">
+									<col width="58">
+									<col width="58">
+									<col width="58">
+									<col width="58">
+									<col>
+								</colgroup>
+								<thead>
+								<tr class="t_line">
+									<th rowspan="3" class="h_th2 th_cop_anal5 b_line"><strong>�ֿ��繫����</strong></th>
+									<th scope="col" colspan="4" class="h_th2 th_cop_anal6"><strong>�ֱ� ���� ����</strong></th>
+									<th scope="col" colspan="6" class="h_th2 th_cop_anal7 last"><strong>�ֱ� �б� ����</strong></th>
+								</tr>
+								<tr>
+									
+										
+										
+										
+										
+										<th scope="col" class="">
+											2019.12
+										</th>
+										
+									
+										
+										
+										
+										
+										<th scope="col" class="">
+											2020.12
+										</th>
+										
+									
+										
+										
+										
+										
+										<th scope="col" class="">
+											2021.12
+										</th>
+										
+									
+										
+										
+										
+											
+										
+										
+										<th scope="col" class="t_line cell_strong">
+											2022.12<em>&#40;E&#41;</em>
+										</th>
+										
+									
+										
+										
+										
+										
+										<th scope="col" class="">
+											2020.12
+										</th>
+										
+									
+										
+										
+										
+										
+										<th scope="col" class="">
+											2021.03
+										</th>
+										
+									
+										
+										
+										
+										
+										<th scope="col" class="">
+											2021.06
+										</th>
+										
+									
+										
+										
+										
+										
+										<th scope="col" class="">
+											2021.09
+										</th>
+										
+									
+										
+										
+										
+										
+										<th scope="col" class="">
+											2021.12
+										</th>
+										
+									
+										
+										
+										
+										
+											
+										
+										<th scope="col" class="last cell_strong">
+											2022.03<em>&#40;E&#41;</em>
+										</th>
+										
+									
+								</tr>
+								<tr class="b_line">
+									
+										
+										
+										
+										 
+
+
+										
+										
+										
+										
+										<th scope="col" class="link_ifrs"><span>
+										
+											
+											
+											IFRS����
+										
+									</span></th>
+										
+									
+										
+										
+										
+										 
+
+
+										
+										
+										
+										
+										<th scope="col" class="link_ifrs"><span>
+										
+											
+											
+											IFRS����
+										
+									</span></th>
+										
+									
+										
+										
+										
+										 
+
+
+										
+										
+										
+										
+										<th scope="col" class="link_ifrs"><span>
+										
+											
+											
+											IFRS����
+										
+									</span></th>
+										
+									
+										
+										
+										
+										 
+
+
+										
+										
+										
+											
+										
+										
+										<th scope="col" class="link_ifrs t_line cell_strong"><span>
+										
+											
+											
+											IFRS����
+										
+									</span></th>
+										
+									
+										
+										
+										
+										 
+
+
+										
+										
+										
+										
+										<th scope="col" class="link_ifrs"><span>
+										
+											
+											
+											IFRS����
+										
+									</span></th>
+										
+									
+										
+										
+										
+										 
+
+
+										
+										
+										
+										
+										<th scope="col" class="link_ifrs"><span>
+										
+											
+											
+											IFRS����
+										
+									</span></th>
+										
+									
+										
+										
+										
+										 
+
+
+										
+										
+										
+										
+										<th scope="col" class="link_ifrs"><span>
+										
+											
+											
+											IFRS����
+										
+									</span></th>
+										
+									
+										
+										
+										
+										 
+
+
+										
+										
+										
+										
+										<th scope="col" class="link_ifrs"><span>
+										
+											
+											
+											IFRS����
+										
+									</span></th>
+										
+									
+										
+										
+										
+										 
+
+
+										
+										
+										
+										
+										<th scope="col" class="link_ifrs"><span>
+										
+											
+											
+											IFRS����
+										
+									</span></th>
+										
+									
+										
+										
+										
+										 
+
+
+										
+										
+										
+										
+											
+										
+										<th scope="col" class="link_ifrs last cell_strong"><span>
+										
+											
+											
+											IFRS����
+										
+									</span></th>
+										
+									
+								</tr>
+								</thead>
+								<tbody>
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal8"><strong>�����</strong></th>
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				25
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				59
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				101
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				27
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				32
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				14
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				26
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				28
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal9"><strong>��������</strong></th>
+
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-57
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-50
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-45
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-15
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-1
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-27
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-13
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-4
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								<tr class="line_end">
+									<th scope="row" class="h_th2 th_cop_anal10"><strong>��������</strong></th>
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-60
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-45
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-42
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-15
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-1
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-27
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-13
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-1
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal11"><strong>�������ͷ�</strong></th>
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-225.42
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-84.12
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-45.05
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-57.60
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-3.33
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-193.39
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-48.30
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-14.56
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal12"><strong>�����ͷ�</strong></th>
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-234.59
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-76.51
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-41.44
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-54.30
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-2.41
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-193.09
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-48.68
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-2.47
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								<tr class="line_end">
+									<th scope="row" class="h_th2 th_cop_anal13"><strong>ROE(��������)</strong></th>
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-125.73
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-20.60
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-22.57
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-20.60
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-17.83
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-27.03
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-30.19
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-22.57
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal14"><strong>��ä����</strong></th>
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				9.58
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				25.99
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				66.27
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				25.99
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				11.69
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				14.48
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				18.80
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				66.27
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal15"><strong>���º���</strong></th>
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				878.06
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				309.64
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				270.24
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				309.64
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				753.96
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				498.20
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				325.20
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				270.24
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								<tr class="line_end">
+									<th scope="row" class="h_th2 th_cop_anal16"><strong>������</strong></th>
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				841.47
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				668.89
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				573.39
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				668.89
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				665.93
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				559.46
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				510.27
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				573.39
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal17"><strong>EPS(��)</strong></th>
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-1,364
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-867
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-800
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-276
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-15
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-526
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-246
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-13
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal20"><strong>PER(��)</strong></th>
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-13.12
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-14.41
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-61.26
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-14.41
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-18.28
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-21.59
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-19.34
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				<em class="f_up">
+				-61.26
+				</em>
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal18"><strong>BPS(��)</strong></th>
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				4,671
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				3,793
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				3,326
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				3,793
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				3,782
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				3,252
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				3,011
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				3,326
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								
+								<tr class="line_end">
+									<th scope="row" class="h_th2 th_cop_anal21"><strong>PBR(��)</strong></th>
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				3.83
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				3.30
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				14.73
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class=" null t_line cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				3.30
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				3.56
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				6.70
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				6.82
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										
+										<td class="">
+											
+											
+												
+				14.73
+			
+											
+										</td>
+										
+									
+										
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class=" null last cell_strong">
+											&nbsp;
+											
+										</td>
+										
+									
+								</tr>
+								
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal19"><strong>�ִ����(��)</strong></th>
+									
+										
+										
+										
+										
+										<td class="">
+											
+												
+				-
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										<td class="">
+											
+												
+				-
+			
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class="no_data 2 t_line cell_strong">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class="no_data 2 last cell_strong">
+											
+										</td>
+										
+									
+
+								</tr>
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal22"><strong>�ð�����(%)</strong></th>
+									
+										
+										
+										
+										
+										<td class="">
+											
+												
+				-
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										<td class="">
+											
+												
+				-
+			
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class="no_data 2 t_line cell_strong">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class="no_data 2 last cell_strong">
+											
+										</td>
+										
+									
+
+								</tr>
+								<tr>
+									<th scope="row" class="h_th2 th_cop_anal23"><strong>��缺��(%)</strong></th>
+									
+										
+										
+										
+										
+										<td class="">
+											
+												
+				-
+			
+											
+										</td>
+										
+									
+										
+										
+										
+										
+										<td class="">
+											
+												
+				-
+			
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+											
+										
+										
+										<td class="no_data 2 t_line cell_strong">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+										<td class="no_data 2">
+											
+										</td>
+										
+									
+										
+										
+											
+										
+										
+										
+											
+										
+										<td class="no_data 2 last cell_strong">
+											
+										</td>
+										
+									
+
+								</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="dsc_ifrs">
+							<ul>
+								<li>�б� ������ �ش� �б������ ���� �������� ���� �б������ ���� ������ �����ϴ� ������� ���ǹǷ�,<br>������� ������ �б� ������ ���̰� ���� �� �ֽ��ϴ�.</li>
+								<li>��������(<em>E</em>) : �ֱ� 3������ ���ǻ翡�� ��ǥ�� ����ġ�� ��հ��Դϴ�.</li>
+							</ul>
+						</div>
+						<div class="ly_moreifrs" style="display:none">
+							<ul class="blind">
+								<li> ���Ͱ�꼭
+									<dl>
+										<dt>������������</dt>
+										<dd>�����-�������-�ǰ���</dd>
+										<dt>������������</dt>
+										<dd>����ȸ���� ���п� �ͼӵǴ� ��������</dd>
+										<dt>��������������</dt>
+										<dd>����ȸ���� ���п� �ͼӵǴ� ��������</dd>
+									</dl>
+								</li>
+								<li> ���ͼ�
+									<dl>
+										<dt>�����������ͷ�</dt>
+										<dd>������������/�����</dd>
+										<dt>ROE(������������)</dt>
+										<dd>������������ �������� / (�ں��Ѱ� - ��������������)</dd>
+									</dl>
+								</li>
+								<li> ��ġ��ǥ
+									<dl>
+										<dt>EPS(������������)</dt>
+										<dd>������������ ��������/�������� ��չ����ֽļ�(�켱��+������)</dd>
+										<dt>BPS(������������</dt>
+										<dd>������������ �ͼ� ���ڻ�/�������� �⸻�����ֽ�(�켱��+������)</dd>
+									</dl>
+								</li>
+							</ul>
+						</div>
+						<div class="dummy"></div>
+						<span class="btn_more"><a href="/item/coinfo.naver?code=300080&target=finsum_more">������</a></span>
+					
+					
+				
+			</div>
+			
+			
+			<hr>
+			
+			
+			
+			
+				<div class="section trade_compare">
+					<h4 class="h_sub sub_tit7"><span>����������</span><em style="position:relative;left:70px;">(������ : <a href="/sise/sise_group_detail.naver?type=upjong&no=300">�����̵��ͼ���</a><span class="bar">��</span>�繫����: 2021.12 �б� ����)</em></h4>
+					<table summary="�������� �񱳿� ����ǥ�̸� ������� ���� ������ �����մϴ�."  class="tb_type1 tb_num">
+						<caption>����������</caption>
+						<thead>
+						<tr>
+							<th class="h_th2 th_cop_comp1"><span>�����</span></th>
+							
+							
+								<th scope="col"><a href="/item/main.naver?code=300080">�ø���<span class="star">*</span><em>300080</em></a></th>
+								
+							
+								<th scope="col"><a href="/item/main.naver?code=035420">NAVER<span class="star">*</span><em>035420</em></a></th>
+								
+							
+								<th scope="col"><a href="/item/main.naver?code=035720">īī��<span class="star">*</span><em>035720</em></a></th>
+								
+							
+								<th scope="col"><a href="/item/main.naver?code=067160">������īTV<span class="star">*</span><em>067160</em></a></th>
+								
+							
+								<th scope="col"><a href="/item/main.naver?code=289220">���̾�Ʈ����<span class="star">*</span><em>289220</em></a></th>
+								
+							
+							
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp2"><span>���簡</span></th>
+							
+								
+									
+									
+									
+										<td>39,050</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>276,500</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>82,600</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>101,400</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>25,450</td>
+									
+								
+							
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp3"><span>���ϴ��</span></th>
+							
+								
+								
+									
+									
+										<td>
+				<em class="f_down down"><span>����</span>
+				500
+				</em>
+			</td>
+									
+								
+							
+								
+								
+									
+									
+										<td>
+				<em class="f_up up"><span>����</span>
+				1,000
+				</em>
+			</td>
+									
+								
+							
+								
+								
+									
+									
+										<td>
+				<em class="f_down down"><span>����</span>
+				600
+				</em>
+			</td>
+									
+								
+							
+								
+								
+									
+									
+										<td>
+				<em class="f_down down"><span>����</span>
+				100
+				</em>
+			</td>
+									
+								
+							
+								
+								
+									
+									
+										<td>
+				<em class="f_up up"><span>����</span>
+				50
+				</em>
+			</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp4"><span>�����</span></th>
+							
+								
+									
+									
+										<td>
+				<em class="f_down"><span>����</span>
+				-1.26%
+				</em>
+			</td>
+									
+								
+							
+								
+									
+									
+										<td>
+				<em class="f_up"><span>����</span>
+				+0.36%
+				</em>
+			</td>
+									
+								
+							
+								
+									
+									
+										<td>
+				<em class="f_down"><span>����</span>
+				-0.72%
+				</em>
+			</td>
+									
+								
+							
+								
+									
+									
+										<td>
+				<em class="f_down"><span>����</span>
+				-0.10%
+				</em>
+			</td>
+									
+								
+							
+								
+									
+									
+										<td>
+				<em class="f_up"><span>����</span>
+				+0.20%
+				</em>
+			</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp5"><span>�ð��Ѿ�(��)</span></th>
+							
+								
+									
+									
+									
+										<td>2,037</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>453,595</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>366,816</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>11,655</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>5,556</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp6"><span>�ܱ��κ���(%)</span></th>
+							
+								
+									
+									
+									
+										<td>10.24</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>53.70</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>28.52</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>37.27</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>5.09</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp7"><span>�����(��)</span></th>
+							
+								
+									
+									
+									
+										<td>28</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>19,277</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>17,857</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>754</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>110</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp8"><span>��������(��)</span></th>
+							
+								
+									
+									
+									
+										<td>-4</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>3,512</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>1,066</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>246</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>-5</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp15"><span>������������(��)</span></th>
+							
+								
+									
+									
+									
+										<td>-4</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>3,512</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>1,066</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>246</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>-5</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp9"><span>��������������(%)</span></th>
+							
+								
+									
+									
+									
+										<td>67.84</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>.42</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>-36.62</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>6.40</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>13.65</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp10"><span>��������(��)</span></th>
+							
+								
+									
+									
+									
+										<td>-1</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>2,998</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>2,241</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>168</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>-14</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp11"><span>�ִ������(��)</span></th>
+							
+								
+									
+									
+									
+										<td>-13.33</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>1,947.82</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>172.40</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>1,463.59</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>-70.31</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp12"><span>ROE(%)</span></th>
+							
+								
+									
+									
+									
+										<td>-22.57</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>106.72</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>17.10</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>39.90</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>-4.96</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp13"><span>PER(%)</span></th>
+							
+								
+									
+									
+									
+										<td>-48.81</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>33.62</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>26.37</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>16.41</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>-138.32</td>
+									
+								
+							
+						</tr>
+						<tr>
+							<th scope="row" class="h_th2 th_cop_comp14"><span>PBR(��)</span></th>
+							
+								
+									
+									
+									
+										<td>11.74</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>1.79</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>3.59</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>5.34</td>
+									
+								
+							
+								
+									
+									
+									
+										<td>4.38</td>
+									
+								
+							
+						</tr>
+						</tbody>
+					</table>
+					<a href="/sise/sise_group_detail.naver?type=upjong&no=300" class="more" onClick="clickcr(this, 'dle.22', '', '', event);">������</a>
+				</div>
+				
+				<hr>
+				<div class="dsc_ifrs2">
+					<ul>
+						<li>PER, PBR ��ġ�� �ֱ� 4�б� �����Դϴ�.</li>
+						<li><em>*</em> ������ IFRS (����) ȸ������� ������ �����Դϴ�. (�ֱ� �б⺸���� �����̸�, ���� �б�� �������� �ٸ� �� �ֽ��ϴ�.)</li>
+						<li>IFRS (����) ���� ������ �������� �� ��ġ��ǥ(�ִ������, PER, PBR)�� �������������� �������� �����Ͽ����ϴ�.</li>
+					</ul>
+				</div>
+			
+		
+
+		
+		
+	
+
+</div>
+
+
+<div id="aside">
+	<div class="bg_line"></div>
+	<div class="aside_invest_info">
+		<div id="tab_invest" class="tab tab_invest1">
+			<a href="javascript:showArea('tab_invest', 'tab tab_invest1', 'tab_con1', 'tab_con2')" onClick="clickcr(this, 'sop.18', '', '2', event)"><span>��������</span></a>
+			<a href="javascript:showArea('tab_invest', 'tab tab_invest2', 'tab_con2', 'tab_con1')" onClick="clickcr(this, 'sop.20', '', '2', event)"><span>ȣ��10�ܰ�</span></a>
+		</div>
+
+		
+		<div id="tab_con1" class="tab_con1" style="display:block">
+		
+			
+			
+				
+					
+					
+						<h3 class="blind">��������</h3>
+						<div class="first">
+						<table summary="�ð��Ѿ� ����">
+						<caption>�ð��Ѿ�</caption>
+						
+							
+							
+								
+							
+						
+						<tr class="strong">
+							<th scope="row">�ð��Ѿ�</th>
+							<td><em id="_market_sum">
+								
+								
+									
+										2,038
+									
+									
+								</em>���</td>
+						</tr>
+						
+							<tr><th scope="row">
+								
+									
+									<a href="/sise/sise_market_sum.naver?sosok=1" class="link_site" onClick="clickcr(this, 'sop.19', '', '1', event)">�ð��Ѿ׼���</a>
+								
+							</th><td>�ڽ��� <em>463</em>��</td></tr>
+						
+						<tr>
+							<th scope="row">�����ֽļ�</th>
+							<td><em>5,218,911</em></td>
+						</tr>
+						
+							<tr><th scope="row">�׸鰡<span class="bar">l</span>�ŸŴ���</th>
+								<td>
+									<em>500</em>��
+									<span class="bar">l</span>
+									<em>1</em>��
+								</td>
+							</tr>
+						
+						
+						</table>
+						</div>
+
+						
+							<div class="gray">
+							<table summary="�ܱ����ѵ��ֽļ� ����" class="lwidth">
+							<caption>�ܱ����ѵ��ֽļ�</caption>
+							<tr>
+								<th scope="row">�ܱ����ѵ��ֽļ�(A)</th>
+								<td><em>5,218,911</em></td>
+							</tr>
+							<tr>
+								<th scope="row">�ܱ��κ����ֽļ�(B)</th>
+								<td><em>534,383</em></td>
+							</tr>
+							<tr class="strong">
+								<th scope="row"><strong>�ܱ��μ�����(B/A)</strong><a href="javascript:togglePannel('helpPannel0');" onMouseOver="showPannel('helpPannel0');" onMouseOut="hidePannel('helpPannel0');"><img src="https://ssl.pstatic.net/static/nfinance/2018/10/26/btn_help.png" width="11" height="11" alt="�ܱ��μ�����(B/A) �󼼼���"></a>
+									<div class="lyr_section">
+		                                 <div id="helpPannel0" class="tooltip_lyr" style="display:none">
+		                                     <p>�ܱ���(�ѵ�)�������̶� �ܱ��κ����ֽļ��� �ܱ����ѵ��ֽļ����� ���� ���Դϴ�.</p>
+		                                     <p>�Ϲ����� ��쿡�� �ܱ����ѵ��ֽļ��� �����ֽļ��� ���Ƽ� �ܱ��� �������� �������� ����������, ���� �Ⱓ����� ��� �ѵ��ֽļ��� ������ �־� �� ������ �޶��� �� �ֽ��ϴ�.(Ex. �ѱ�����)</p>
+		                                     <span class="arrow"></span>
+		                                 </div>
+		                            </div>
+								</th>
+								<td><em>10.24%</em></td>
+							</tr>
+							</table>
+							</div>
+						
+
+						<div>
+						<table summary="�����ǰ� ����" class="rwidth">
+						
+							<caption>�����ǰ�</caption>
+							<tr><th scope="row" style="width:115px">�����ǰ�<span class="bar">l</span>��ǥ�ְ�</th>
+							<td style="width:115px">
+							
+								
+									<span><em>N/A</em></span>
+								
+								
+								
+								
+								
+							
+							<span class="bar">l</span>
+							
+								<span><em>N/A</em></span>
+								
+							
+							</td></tr>
+						
+						<tr>
+							<th scope="row">52���ְ�<span class="bar">l</span>����
+								
+							</th>
+							
+								
+								
+									<td>
+										<em>54,400</em>
+										<span class="bar">l</span>
+										<em>17,200</em>
+									</td>
+								
+							
+						</tr>
+						</table>
+						</div>
+
+						
+							<div>
+							<table summary="PER/EPS ����" class="per_table">
+							<caption>PER/EPS</caption>
+		                    <tbody>
+		                    <tr>
+	 							<th scope="row">
+	 								PER<span class="bar">l</span>EPS<span class="date">(2021.12)</span><a href="javascript:togglePannel('helpPannel1');" onMouseOver="showPannel('helpPannel1');" onMouseOut="hidePannel('helpPannel1');"><img src="https://ssl.pstatic.net/static/nfinance/2018/10/26/btn_help.png" width="11" height="11" alt="����PER EPS �󼼼���"></a>
+	 								<div class="lyr_section">
+	 									<div id="helpPannel1" class="tooltip_lyr" style="display:none">
+	 										<p>
+	 											<strong>PER = ���簡 �� EPS</strong>
+												EPS�� �������ͼ� �ֱ� 4�б� �ջ� ��������
+												������չ����ֽļ��� ���� ���̸�, �����ֿ�
+												�켱�ָ� �ջ��ؼ� ����մϴ�.
+											</p>
+											<span class="arrow"></span>
+	 									</div>
+	 								</div>
+	 							</th>
+								<td>
+									
+									
+										<em>N/A</em>
+										
+									
+									<span class="bar">l</span>
+									
+										
+										<em id="_eps">-800</em>��
+									
+	 							</td>
+ 						    </tr>
+		                    </tbody>
+		                    <tr>
+		                        <th scope="row">����PER<span class="bar">l</span>EPS<a href="javascript:togglePannel('helpPannel3');" onMouseOver="showPannel('helpPannel3');" onMouseOut="hidePannel('helpPannel3');"><img src="https://ssl.pstatic.net/static/nfinance/2018/10/26/btn_help.png" width="11" height="11" alt="����PER EPS �󼼼���"></a>
+ 								<div class="lyr_section">
+										<div id="helpPannel3" class="tooltip_lyr tooltip_lyr2" style="display:none">
+											<p>
+												<strong>����PER = ���簡������EPS</strong>
+												����EPS�� ���� ����EPS�� ���� ���ǻ� ���� ��հ�(��������)���� �����ذ��̵忡�� �����մϴ�. ���� ���ǻ簡 3�� �̻��� ��쿡�� �����մϴ�.
+											</p>
+											<span class="arrow"></span>
+										</div>
+									</div>
+								</th>
+								<td>
+									
+										<em>N/A</em>
+										
+									
+									<span class="bar">l</span>
+									
+										<em>N/A</em>
+										
+									
+								</td>
+							</tr>
+							<tr>
+								<th scope="row">PBR<span class="bar">l</span>BPS <span class="date">(2021.12)</span><a href="javascript:togglePannel('helpPannel4');" onMouseOver="showPannel('helpPannel4');" onMouseOut="hidePannel('helpPannel4');"><img src="https://ssl.pstatic.net/static/nfinance/2018/10/26/btn_help.png" width="11" height="11" alt="PBR | BPS �󼼼���"></a>
+									<div class="lyr_section">
+										<div id="helpPannel4" class="tooltip_lyr tooltip_lyr3" style="display:none">
+											<p>
+												<strong>PBR= ���簡 �� BPS</strong>
+												BPS�� �ֱ� �б� �ں��Ѱ踦 �����⸻�����ֽļ���
+												���� ���̸�, �����ֿ� �켱�ָ� �ջ��ؼ� ����մϴ�.
+											</p>
+											<span class="arrow"></span>
+										</div>
+									</div>
+								</th>
+								<td>
+									
+										
+										<em id="_pbr">11.74</em>��
+									
+									<span class="bar">l</span>
+									
+										
+										<em>3,326</em>��
+									
+								</td>
+							</tr>
+							<tr>
+								
+								
+								
+								
+								<th scope="row">�����ͷ�<a href="javascript:togglePannel('helpPannel5');" onMouseOver="showPannel('helpPannel5');" onMouseOut="hidePannel('helpPannel5');"><img src="https://ssl.pstatic.net/static/nfinance/2018/10/26/btn_help.png" width="11" height="11" alt="�����ͷ� �󼼼���"></a>
+									<div class="lyr_section">
+										<div id="helpPannel5" class="tooltip_lyr dividend_layer"  style="display:none">
+											<strong>�����ͷ� = (���� / ���簡) x 100</strong>
+											<p>������ �ֱ� ��꿬�� ������ �߰������ ������ �� �����Դϴ�.</p>
+											<span class="arrow"></span>
+										</div>
+									</div>
+								</th>
+								<td>
+									
+										<em>N/A</em>
+										
+									
+								</td>
+							</tr>
+							</table>
+							</div>
+							<div class="gray">
+							<table summary="���Ͼ��� PER ����">
+							<caption>���Ͼ��� PER</caption>
+							<tr class="strong">
+								<th scope="row"><a class="link_site" href="/sise/sise_group_detail.naver?type=upjong&no=300" class="link_site" onClick="clickcr(this, 'sop.19', '', '2', event)">���Ͼ��� PER</a></th>
+								<td>
+									
+										
+										<em>4.74</em>��
+									
+								</td>
+							</tr>
+							<tr>
+								<th scope="row"><a class="link_site" href="/sise/sise_group_detail.naver?type=upjong&no=300" class="link_site" onClick="clickcr(this, 'sop.19', '', '3', event)">���Ͼ��� �����</a></th>
+								
+									
+									
+				<td class="f_down"><em>
+				-0.13%
+				</em></td>
+			
+								
+							</tr>
+							</table>
+							</div>
+						
+					
+				
+			
+		
+		</div>
+
+		
+		<div id="tab_con2" class="tab_con2" style="display:none">
+			<h3 class="blind">ȣ�� 10�ܰ�</h3>
+			<table summary="ȣ��10�ܰ� ����">
+			<caption>ȣ�� 10�ܰ�</caption>
+			<tr>
+				<th scope="col">�ŵ��ܷ�</th>
+				<th scope="col">ȣ��<span class="txt_color">(20������)</span></th>
+				<th scope="col" class="th_r">�ż��ܷ�</th>
+			</tr>
+			<tr><td colspan="3" class="space"></td></tr>
+			
+				<tr class="f_down">
+				<td>
+				
+					
+					242
+				
+				</td>
+				<td>
+				
+					
+					39,800
+				
+				</td>
+				<td class="td_r"></td>
+				</tr>
+			
+				<tr class="f_down">
+				<td>
+				
+					
+					100
+				
+				</td>
+				<td>
+				
+					
+					39,750
+				
+				</td>
+				<td class="td_r"></td>
+				</tr>
+			
+				<tr class="f_down">
+				<td>
+				
+					
+					100
+				
+				</td>
+				<td>
+				
+					
+					39,700
+				
+				</td>
+				<td class="td_r"></td>
+				</tr>
+			
+				<tr class="f_down">
+				<td>
+				
+					
+					50
+				
+				</td>
+				<td>
+				
+					
+					39,650
+				
+				</td>
+				<td class="td_r"></td>
+				</tr>
+			
+				<tr class="f_down">
+				<td>
+				
+					
+					21
+				
+				</td>
+				<td>
+				
+					
+					39,600
+				
+				</td>
+				<td class="td_r"></td>
+				</tr>
+			
+				<tr class="f_down">
+				<td>
+				
+					
+					1
+				
+				</td>
+				<td>
+				
+					
+					39,550
+				
+				</td>
+				<td class="td_r"></td>
+				</tr>
+			
+				<tr class="f_down">
+				<td>
+				
+					
+					109
+				
+				</td>
+				<td>
+				
+					
+					39,500
+				
+				</td>
+				<td class="td_r"></td>
+				</tr>
+			
+				<tr class="f_down">
+				<td>
+				
+					
+					110
+				
+				</td>
+				<td>
+				
+					
+					39,200
+				
+				</td>
+				<td class="td_r"></td>
+				</tr>
+			
+				<tr class="f_down">
+				<td>
+				
+					
+					72
+				
+				</td>
+				<td>
+				
+					
+					39,100
+				
+				</td>
+				<td class="td_r"></td>
+				</tr>
+			
+			<tr class="f_down strong">
+				<td>
+				
+					
+					375
+				
+				</td>
+				<td>
+				
+					
+					39,050
+				
+				</td>
+				<td class="td_r"></td>
+			</tr>
+			<tr><td colspan="3" class="line_dot"></td></tr>
+			<tr class="f_up strong">
+				<td></td>
+				<td>
+				
+					
+					38,650
+				
+				</td>
+				<td class="td_r">
+				
+					
+					1,119
+				
+				</td>
+			</tr>
+			
+				<tr class="f_up">
+				<td></td>
+				<td>
+				
+					
+					38,550
+				
+				</td>
+				<td class="td_r">
+				
+					
+					26
+				
+				</td>
+				</tr>
+			
+				<tr class="f_up">
+				<td></td>
+				<td>
+				
+					
+					38,500
+				
+				</td>
+				<td class="td_r">
+				
+					
+					10
+				
+				</td>
+				</tr>
+			
+				<tr class="f_up">
+				<td></td>
+				<td>
+				
+					
+					38,450
+				
+				</td>
+				<td class="td_r">
+				
+					
+					14
+				
+				</td>
+				</tr>
+			
+				<tr class="f_up">
+				<td></td>
+				<td>
+				
+					
+					38,350
+				
+				</td>
+				<td class="td_r">
+				
+					
+					803
+				
+				</td>
+				</tr>
+			
+				<tr class="f_up">
+				<td></td>
+				<td>
+				
+					
+					38,300
+				
+				</td>
+				<td class="td_r">
+				
+					
+					2
+				
+				</td>
+				</tr>
+			
+				<tr class="f_up">
+				<td></td>
+				<td>
+				
+					
+					38,250
+				
+				</td>
+				<td class="td_r">
+				
+					
+					20
+				
+				</td>
+				</tr>
+			
+				<tr class="f_up">
+				<td></td>
+				<td>
+				
+					
+					38,150
+				
+				</td>
+				<td class="td_r">
+				
+					
+					5
+				
+				</td>
+				</tr>
+			
+				<tr class="f_up">
+				<td></td>
+				<td>
+				
+					
+					38,100
+				
+				</td>
+				<td class="td_r">
+				
+					
+					40
+				
+				</td>
+				</tr>
+			
+				<tr class="f_up">
+				<td></td>
+				<td>
+				
+					
+					38,050
+				
+				</td>
+				<td class="td_r">
+				
+					
+					25
+				
+				</td>
+				</tr>
+			
+			<tr><td colspan="3" class="space"></td></tr>
+			<tr class="total">
+				<td class="f_down">
+					
+						
+						1,180
+					
+				</td>
+				<td>�ܷ��հ�</td>
+				<td class="f_up">
+					
+						
+						2,064
+					
+				</td>
+			</tr>
+			</table>
+		</div>
+	</div>
+
+
+
+
+	
+<script language=javascript src="https://ssl.pstatic.net/imgstock/static.pc/20220511192542/js/item_main_right_area.js"></script>
+
+		
+		<div class="aside_section cop_list">
+			
+				
+					<div id="tab_search" class="tab tab_search1">
+				
+				
+			
+			<a href="javascript:showRecent('tab_search', 'tab tab_search1', '300080', 'recent')" onClick="jindo.$Cookie().set('summary_item_type', 'recent', 30, 'finance.naver.com'); clickcr(this, 'rch.1', '', '', event);"><span>�ֱ���ȸ</span></a>
+			<a href="javascript:showRecent('tab_search', 'tab tab_search2', '300080', 'mystock')" onClick="jindo.$Cookie().set('summary_item_type', 'mystock', 30, 'finance.naver.com'); clickcr(this, 'rch.3', '', '', event);"><span>MY STOCK</span></a>
+			<!-- [D] Ȱ��ȭ�� �Ǹ޴��� ���� blind text �������ּ��� -->
+			<h2 class="blind" id="blind_text_tab_search">�ֱ���ȸ</h2>
+		</div>
+
+		
+		<script type="text/template" id="recent_list_none">
+			<div class="no_result">
+				<img src="https://ssl.pstatic.net/static/nfinance/img/no_result_aside1_v2.gif" width="144" height="13" border="0" alt="�ֱ� ��ȸ�� ������ �����ϴ�." class="noresult_txt1">
+			</div>
+		</script>
+		<script type="text/template" id="mystock_logout">
+			<div class="no_result">
+				<map name="no_result_aside2">
+				<area shape="rect" coords="6,38,107,52" href="javascript:naver_login()" alt="My stock �α���">
+				</map>
+				<img src="https://ssl.pstatic.net/imgstock/item_renewal/no_result_aside2.gif" width="116" height="53" border="0" usemap="#no_result_aside2" title="" alt="�α����Ͻø� ����Ͻ� ������ �ü��� �����˴ϴ�." class="noresult_txt2">
+			</div>
+		</script>
+		<script type="text/template" id="mystock_list_none">
+			<div class="no_result">
+				<map name="no_result_aside3">
+				<area shape="rect" coords="11,38,125,52" href="/mystock/" alt="My stock �ٷΰ���">
+				</map>
+				<img src="https://ssl.pstatic.net/imgstock/item_renewal/no_result_aside3.gif" width="137" height="53" border="0" usemap="#no_result_aside3" title="" alt="MY STOCK�� ���������� ����Ͻø� �ü��� �����˴ϴ�." class="noresult_txt3">
+			</div>
+		</script>
+		<script type="text/template" id="recent_list_exist">
+			{if type == "recent"}
+				{set listNclicksId="rch.2"}
+				<table summary="�ֱ���ȸ ����Ʈ" class="con_search1">
+				<caption>�ֱ���ȸ</caption>
+					<colgroup><col><col width="50"><col width="72"></colgroup>
+			{else}
+				{set listNclicksId="rch.4"}
+				<table summary="MY STOCK ����Ʈ" class="con_search2">
+				<caption>MY STOCK</caption>
+					<colgroup><col><col width="60"><col width="60"></colgroup>
+			{/if}
+				<thead>
+				<tr>
+					<th>��ü��</th>
+					<th scope="col">�ŷ���</th>
+					<th scope="col">���Ϻ�</th>
+				</tr>
+				</thead>
+				{for index:itemList in item_list}
+					{if index == 5 || index == 10}
+						<tr><td colspan="3" class="line"></td></tr>
+					{/if}
+					<tr>
+						<th scope="row">
+						<a href="/item/main.naver?code={=itemList.itemcode}" onClick="clickcr(this, '{=listNclicksId}', '{=itemList.itemcode}', '{=index + 1}', event);" target=_top>{=itemList.itemname}</a>
+						</th>
+						<td id="nowVal_td_{=index}">{=itemList.now_val}</td>
+						<td>
+							{if itemList.risefall == '1'}
+								<em class="f_up up_arrow" id="changeVal_em_{=index}"><span id="changeVal_span_{=index}">���Ѱ�</span>{=itemList.change_val}</em>
+							{elseif itemList.risefall == '2'}
+								<em class="f_up up" id="changeVal_em_{=index}"><span id="changeVal_span_{=index}">����</span>{=itemList.change_val}</em>
+							{elseif itemList.risefall == '4'}
+								<em class="f_down down_arrow" id="changeVal_em_{=index}"><span id="changeVal_span_{=index}">���Ѱ�</span>{=itemList.change_val}</em>
+							{elseif itemList.risefall == '5'}
+								<em class="f_down down" id="changeVal_em_{=index}"><span id="changeVal_span_{=index}">����</span>{=itemList.change_val}</em>
+							{else}
+								<em class="sam" id="changeVal_em_{=index}"><span id="changeVal_span_{=index}">����</span></em>
+							{/if}
+							{if type == "recent"}
+								<a href="javascript:deleteCodeFromRecent('{=itemList.itemcode}', '{=code}', '{=type}', '{=page}')"><img src="https://ssl.pstatic.net/imgstock/item_renewal/btn_delete.gif" alt="����" width="11" height="11"></a>
+							{/if}
+						</td>
+					</tr>
+				{/for}
+			</table>
+		</script>
+		<div id="recent_area"></div>
+
+		
+		<script type="text/template" id="recent_btn_tmpl">
+			<span>
+				{if prev_page != 0 || next_page != 0}
+				{if prev_page == 0}
+					<a href="#" onClick="clickcr(this, 'rch.5', '', '', event); return false;"><img src="https://ssl.pstatic.net/static/nfinance/btn_prev2.gif" width="17" height="15" alt="����"></a>
+				{elseif prev_page > 0}
+					<a href="javascript:movePage('{=code}', '{=type}', '{=prev_page}');" onClick="clickcr(this, 'rch.5', '', '', event)"><img src="https://ssl.pstatic.net/static/nfinance/btn_prev2.gif" width="17" height="15" alt="����"></a>
+				{/if}
+				{if next_page == 0}
+					<a href="#" onClick="clickcr(this, 'rch.6', '', '', event); return false;"><img src="https://ssl.pstatic.net/static/nfinance/btn_next2.gif" width="17" height="15" alt="����"></a>
+				{elseif next_page > 0}
+					<a href="javascript:movePage('{=code}', '{=type}', '{=next_page}');" onClick="clickcr(this, 'rch.6', '', '', event)"><img src="https://ssl.pstatic.net/static/nfinance/btn_next2.gif" width="17" height="15" alt="����"></a>
+				{/if}
+				{/if}
+			</span>
+			{if type != 'recent'}
+			<a href="/mystock/" class="more" onClick="clickcr(this, 'rch.7', '', '', event)">������</a>
+			{/if}
+		</script>
+		<div id="recent_button" class="more_info"></div>
+
+		
+			<script type="text/javascript">
+			var comment_code = "300080";
+			var comment_type = "recent";
+			var comment_page = "1";
+			
+			  	jindo.$Fn(function() {
+					movePage('300080', 'recent', '1');
+				}).attach(document,"domready");
+			
+			</script>
+	</div>
+	
+
+	
+	
+		<script>
+			if (ieVersion === -1 || ieVersion > 10) {
+				window.gladsdk = window.gladsdk || { cmd: [] };
+
+				gladsdk.cmd.push(function() {
+					gladsdk.defineAdSlot({
+						adUnitId: "p_stock_sidebox",
+						adSlotElementId: "_IframeBannerRight",
+						uct: "KR",
+						customParam: {
+							calp: "domestic"
+						},
+					});
+				})
+			}
+		</script>
+
+		<div class="aside_section ad_banner">
+			<div id="_IframeBannerRight">
+				<script>
+					if (ieVersion === -1 || ieVersion > 10) {
+						gladsdk.cmd.push(function() {
+							gladsdk.displayAd("_IframeBannerRight");
+						});
+					}
+				</script>
+			</div>
+		</div>
+	
+	
+
+	
+	<div class="aside_section cop_list">
+		 <h2 class="h_sub sub_tit9"><span>�α�˻�����</span></h2>
+		<div id="tab_fav" class="tab tab_fav1">
+			<a href="javascript:showArea('tab_fav', 'tab tab_fav1', 'fav_kospi', 'fav_kosdaq')" onClick="clickcr(this, 'pss.1', '', '', event);"><span>�ڽ���</span></a>
+			<a href="javascript:showArea('tab_fav', 'tab tab_fav2', 'fav_kosdaq', 'fav_kospi')" onClick="clickcr(this, 'pss.3', '', '', event);"><span>�ڽ���</span></a>
+			<!-- [D] Ȱ��ȭ�� �Ǹ޴��� ���� blind text �������ּ��� -->
+			<h3 class="blind" id="blind_text_tab_fav">�ڽ���</h3>
+		</div>
+
+		<div id="fav_kospi" style="display:block">
+		<table summary="�ڽ��� �α�˻����� ����Ʈ" class="rank">
+		<caption>�ڽ��� �α�˻�����</caption>
+		<colgroup><col><col width="60"><col width="86"></colgroup>
+		<thead>
+		<tr>
+			<th>��ü��</th>
+			<th scope="col">�ŷ���</th>
+			<th scope="col">���Ϻ�</th>
+		</tr>
+		</thead>
+		
+			
+			<tr>
+				<th scope="row" class="no1"><a href="/item/main.naver?code=005930" target=_top onClick="clickcr(this, 'pss.2', '', '1', event);">�Ｚ����</a></th>
+				<td>68,100</td>
+				<td>
+					
+				<em class="f_up up"><span>����</span>
+				500
+				</em>
+			
+				</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no2"><a href="/item/main.naver?code=035720" target=_top onClick="clickcr(this, 'pss.2', '', '2', event);">īī��</a></th>
+				<td>82,600</td>
+				<td>
+					
+				<em class="f_down down"><span>����</span>
+				600
+				</em>
+			
+				</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no3"><a href="/item/main.naver?code=005380" target=_top onClick="clickcr(this, 'pss.2', '', '3', event);">������</a></th>
+				<td>185,500</td>
+				<td>
+					
+				<em class="sam"><span>����</span></em>
+			
+				</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no4"><a href="/item/main.naver?code=051910" target=_top onClick="clickcr(this, 'pss.2', '', '4', event);">LGȭ��</a></th>
+				<td>512,000</td>
+				<td>
+					
+				<em class="f_up up"><span>����</span>
+				7,000
+				</em>
+			
+				</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no5"><a href="/item/main.naver?code=008040" target=_top onClick="clickcr(this, 'pss.2', '', '5', event);">�������ƿ�</a></th>
+				<td>2,450</td>
+				<td>
+					
+				<em class="f_up up"><span>����</span>
+				300
+				</em>
+			
+				</td>
+			</tr>
+		
+			
+				<tr><td colspan="3" class="line"></td></tr>
+			
+			<tr>
+				<th scope="row" class="no6"><a href="/item/main.naver?code=132030" target=_top onClick="clickcr(this, 'pss.2', '', '6', event);">KODEX ��弱..</a></th>
+				<td>12,200</td>
+				<td>
+					
+				<em class="f_down down"><span>����</span>
+				110
+				</em>
+			
+				</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no7"><a href="/item/main.naver?code=120115" target=_top onClick="clickcr(this, 'pss.2', '', '7', event);">�ڿ����δ���</a></th>
+				<td>31,500</td>
+				<td>
+					
+				<em class="f_up up"><span>����</span>
+				800
+				</em>
+			
+				</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no8"><a href="/item/main.naver?code=102110" target=_top onClick="clickcr(this, 'pss.2', '', '8', event);">TIGER 200</a></th>
+				<td>34,935</td>
+				<td>
+					
+				<em class="f_up up"><span>����</span>
+				85
+				</em>
+			
+				</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no9"><a href="/item/main.naver?code=093050" target=_top onClick="clickcr(this, 'pss.2', '', '9', event);">LF</a></th>
+				<td>20,300</td>
+				<td>
+					
+				<em class="f_up up"><span>����</span>
+				250
+				</em>
+			
+				</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no10"><a href="/item/main.naver?code=035420" target=_top onClick="clickcr(this, 'pss.2', '', '10', event);">NAVER</a></th>
+				<td>276,500</td>
+				<td>
+					
+				<em class="f_up up"><span>����</span>
+				1,000
+				</em>
+			
+				</td>
+			</tr>
+		
+		</table>
+		</div>
+		<div id="fav_kosdaq" style="display:none">
+		<table summary="�ڽ��� �α�˻����� ����Ʈ" class="rank">
+		<caption>�ڽ��� �α�˻�����</caption>
+		<colgroup><col><col width="50"><col width="86"></colgroup>
+		<thead>
+		<tr>
+			<th>��ü��</th>
+			<th scope="col">�ŷ���</th>
+			<th scope="col">���Ϻ�</th>
+		</tr>
+		</thead>
+		
+			
+			<tr>
+				<th scope="row" class="no1"><a href="/item/main.naver?code=028300" target=_top onClick="clickcr(this, 'pss.4', '', '1', event);">HLB</a></th>
+				<td>52,300</td>
+				<td>
+				<em class="f_up up"><span>����</span>
+				6,600
+				</em>
+			</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no2"><a href="/item/main.naver?code=171120" target=_top onClick="clickcr(this, 'pss.4', '', '2', event);">���̿�����</a></th>
+				<td>8,100</td>
+				<td>
+				<em class="f_up up"><span>����</span>
+				100
+				</em>
+			</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no3"><a href="/item/main.naver?code=067730" target=_top onClick="clickcr(this, 'pss.4', '', '3', event);">�����ý�</a></th>
+				<td>6,860</td>
+				<td>
+				<em class="f_up up"><span>����</span>
+				740
+				</em>
+			</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no4"><a href="/item/main.naver?code=376980" target=_top onClick="clickcr(this, 'pss.4', '', '4', event);">��Ƽ�左</a></th>
+				<td>28,400</td>
+				<td>
+				<em class="f_up up"><span>����</span>
+				1,400
+				</em>
+			</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no5"><a href="/item/main.naver?code=373200" target=_top onClick="clickcr(this, 'pss.4', '', '5', event);">����ũ�ڸ���</a></th>
+				<td>13,700</td>
+				<td>
+				<em class="f_up up_arrow"><span>���Ѱ�</span>
+				3,150
+				</em>
+			</td>
+			</tr>
+		
+			
+				<tr><td colspan="3" class="line"></td></tr>
+			
+			<tr>
+				<th scope="row" class="no6"><a href="/item/main.naver?code=290380" target=_top onClick="clickcr(this, 'pss.4', '', '6', event);">����</a></th>
+				<td>5,800</td>
+				<td>
+				<em class="sam"><span>����</span></em>
+			</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no7"><a href="/item/main.naver?code=267320" target=_top onClick="clickcr(this, 'pss.4', '', '7', event);">������ũ</a></th>
+				<td>3,295</td>
+				<td>
+				<em class="f_up up"><span>����</span>
+				110
+				</em>
+			</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no8"><a href="/item/main.naver?code=246710" target=_top onClick="clickcr(this, 'pss.4', '', '8', event);">Ƽ�ؾ˹��̿�..</a></th>
+				<td>20,300</td>
+				<td>
+				<em class="f_up up"><span>����</span>
+				200
+				</em>
+			</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no9"><a href="/item/main.naver?code=214180" target=_top onClick="clickcr(this, 'pss.4', '', '9', event);">�ξ���</a></th>
+				<td>16,600</td>
+				<td>
+				<em class="f_down down"><span>����</span>
+				100
+				</em>
+			</td>
+			</tr>
+		
+			
+			<tr>
+				<th scope="row" class="no10"><a href="/item/main.naver?code=177830" target=_top onClick="clickcr(this, 'pss.4', '', '10', event);">�Ĺ�����</a></th>
+				<td>4,530</td>
+				<td>
+				<em class="f_down down"><span>����</span>
+				190
+				</em>
+			</td>
+			</tr>
+		
+		</table>
+		</div>
+	</div>
+	
+
+	
+	<div class="aside_section rate">
+		<h2 class="h_sub sub_tit8"><span>�ü������ٷΰ���</span></h2>
+		<p>
+			<a href="/sise/sise_index.naver?code=KOSPI" onClick="clickcr(this, 'quk.2', '', '', event);">�ڽ���</a>
+			<a href="/sise/sise_index.naver?code=KOSDAQ" onClick="clickcr(this, 'quk.3', '', '', event);">�ڽ���</a>
+			<a href="/sise/sise_index.naver?code=FUT" onClick="clickcr(this, 'quk.4', '', '', event);">����</a>
+			<a href="/sise/konex.naver" class="end" onClick="clickcr(this, 'quk.konex', '', '', event);">�ڳؽ�</a><br>
+			<a href="/sise/sise_index.naver?code=KPI200" onClick="clickcr(this, 'quk.30', '', '', event);">�ڽ���200</a>
+			<a href="/sise/etf.naver" onClick="clickcr(this, 'quk.31', '', '', event);">ETF</a>
+			<a href="/sise/sise_group.naver?type=upjong" onClick="clickcr(this, 'quk.5', '', '', event);"><strong>������</strong></a>
+			<a href="/sise/theme.naver" class="end" onClick="clickcr(this, 'quk.6', '', '', event);">�׸���</a><br>
+			<a href="/sise/sise_upper.naver" onClick="clickcr(this, 'quk.7', '', '', event);"><strong>���Ѱ�</strong></a>
+			<a href="/sise/sise_lower.naver" onClick="clickcr(this, 'quk.8', '', '', event);">���Ѱ�</a>
+			<a href="/sise/sise_rise.naver" onClick="clickcr(this, 'quk.9', '', '', event);">���</a>
+			<a href="/sise/sise_steady.naver" onClick="clickcr(this, 'quk.10', '', '', event);">����</a>
+			<a href="/sise/sise_fall.naver" class="end" onClick="clickcr(this, 'quk.11', '', '', event);">�϶�</a><br>
+			<a href="/sise/sise_quant.naver" onClick="clickcr(this, 'quk.12', '', '', event);">�ŷ�����</a>
+			<a href="/sise/sise_quant_high.naver" onClick="clickcr(this, 'quk.13', '', '', event);"><strong>����</strong></a>
+			<a href="/sise/sise_quant_low.naver" class="end" onClick="clickcr(this, 'quk.14', '', '', event);">�ް�</a><br>
+			<a href="/sise/sise_high_down.naver" onClick="clickcr(this, 'quk.15', '', '', event);">�������޶�</a>
+			<a href="/sise/sise_low_up.naver" class="end" onClick="clickcr(this, 'quk.16', '', '', event);">�������޵�</a>
+		</p>
+		<p>
+			<a href="/sise/sise_market_sum.naver" onClick="clickcr(this, 'quk.17', '', '', event);"><strong>�ð��Ѿ׻���</strong></a>
+			<a href="/sise/sise_foreign_hold.naver" class="end" onClick="clickcr(this, 'quk.18', '', '', event);">�ܱ��κ�����Ȳ</a><br>
+			<a href="/sise/sise_deal_rank.naver" onClick="clickcr(this, 'quk.19', '', '', event);">�ܱ��θŸ�</a>
+			<a href="/sise/sise_deal_rank.naver?investor_gubun=1000" onClick="clickcr(this, 'quk.19-1', '', '', event);">����Ÿ�</a>
+			<a href="/sise/sise_program.naver" class="end" onClick="clickcr(this, 'quk.20', '', '', event);">���α׷��Ÿ�</a><br>
+			<a href="/sise/management.naver" onClick="clickcr(this, 'quk.21', '', '', event);">��������������</a>
+			<a href="/sise/sise_new_stock.naver" class="end" onClick="clickcr(this, 'quk.22', '', '', event);">�űԻ�������</a><br>
+			<a href="/sise/sise_deposit.naver" onClick="clickcr(this, 'quk.23', '', '', event);">�����ڱݵ���</a>
+			<a href="/sise/sise_trans_style.naver" class="end" onClick="clickcr(this, 'quk.24', '', '', event);">�����ں��Ÿŵ���</a>
+		</p>
+		<p>
+			<a href="/sise/item_gap.naver" onClick="clickcr(this, 'quk.25', '', '', event);">����� ����</a>
+			<a href="/sise/item_gold.naver" class="end" onClick="clickcr(this, 'quk.26', '', '', event);">���ũ�ν� ����</a><br>
+			<a href="/sise/item_igyuk.naver" onClick="clickcr(this, 'quk.27', '', '', event);">�̰ݵ���������</a>
+			<a href="/sise/item_overheating_1.naver" class="end" onClick="clickcr(this, 'quk.28', '', '', event);">���ڽɸ���������</a><br>
+			<a href="/sise/item_overheating_2.naver" class="end" onClick="clickcr(this, 'quk.29', '', '', event);">��밭����������</a>
+		</p>
+		<a href="/sise/" class="more" onClick="clickcr(this, 'quk.1', '', '', event);">������</a>
+		<div class="hidden_line"></div>
+	</div>
+	
+
+	
+	
+
+	
+	<div class="aside_section notice">
+		<h2 class="h_sub sub_tit10"><span>��������</span></h2>
+		<ul>
+			
+				<li><a href="https://finance.naver.com/notice.nhn?permLink=/read/1100001004/10000000000030672007"  onClick="clickcr(this, 'ice.2', 'https://finance.naver.com/notice.nhn?permLink=/read/1100001004/10000000000030672007', '1', event)"> ����� �۾��� ID ��å ����</a></li>
+			
+				<li><a href=""  onClick="clickcr(this, 'ice.2', '', '2', event)"></a></li>
+			
+				<li><a href=""  onClick="clickcr(this, 'ice.2', '', '3', event)"></a></li>
+			
+				<li><a href=""  onClick="clickcr(this, 'ice.2', '', '4', event)"></a></li>
+			
+				<li><a href=""  onClick="clickcr(this, 'ice.2', '', '5', event)"></a></li>
+			
+		</ul>
+		<a href="https://finance.naver.com/notice.naver" class="more" onClick="clickcr(this, 'ice.1', '', '', event);">������</a>
+	</div>
+	
+
+
+
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+	<div id="footer">
+		<ul>
+			<li class="first">
+				<a href="https://www.naver.com/rules/service.html" onClick="clickcr(this, 'fot.service', '', '', event);" target="_blank">�̿���</a>
+			</li>
+			<li>
+				<a href="https://finance.naver.com/rules.naver" onClick="clickcr(this, 'fot.policy', '', '', event);" target="_blank">�����Խ��� ���Ģ</a>
+			</li>
+			<li>
+				<a href="https://www.naver.com/rules/privacy.html" onClick="clickcr(this, 'fot.privacy', '', '', event);" target="_blank"><strong>��������ó����ħ</strong></a>
+			</li>
+			<li>
+				<a href="https://www.naver.com/rules/disclaimer.html" onClick="clickcr(this, 'fot.limit', '', '', event);" target="_blank">å���� �Ѱ�� ��������</a>
+			</li>
+			<li>
+				<a href="https://help.naver.com/support/alias/contents2/finance/finance_1.naver" onclick="clickcr(this, 'fot.help', '', '', event);" target="_blank">���� ��������</a>
+			</li>
+		</ul>
+		<p class="desc">���̹�(��)�� �����ϴ� ���� ������ �� ������ ������ü<a href="javascript:;" onclick="togglePanelFooter('footerPanel0');" class="desc_help"><img src="https://ssl.pstatic.net/static/nfinance/2018/06/29/btn_help.png" width="17" height="17" alt="������ü �󼼼���"></a>�κ��� �޴� ���� ���������̸�, ������ �߻��ϰų� ������ �� �ֽ��ϴ�.<br>���̹�(��)�� ������ ������ü�� ������ ������ ���� ���� ����� ������ å���� ���� �ʽ��ϴ�. �Խõ� ������ �������� ������ �� �����ϴ�.</p>
+		<div id="footerPanel0" class="provider_layer" style="display:none" tabindex="0" onblur="hidePannel('footerPanel0')">
+			<strong class="provider_layer__tit">������ ������ü</strong>
+			<div class="provider_layer__txt">
+				<p><span>�ڽ��� : </span>�ǽð� �ְ����� �� �����ü�����</p>
+				<p><span>�����ذ��̵� : </span>��� �� �繫����</p>
+				<p><span>KG������ : </span>�ؿ� �ü�, ������ǥ �� �ݵ� ����</p>
+				<p><span>�ѱ���Ź������ : </span>������ȸ�� �� ������ǥ ����</p>
+				<p><span>������Ź : </span>���� �׸� ����</p>
+			</div>
+			<span class="arrow"></span>
+		</div>
+		<address>
+			<a href="https://www.navercorp.com/" target="_blank" class="logo" onClick="clickcr(this, 'fot.nhn', '', '', event);"><img src="https://ssl.pstatic.net/static/nfinance/2019/02/22/ci_naver.png" width="58" height="11" alt="NAVER" /></a>
+			<em>Copyright &copy;</em>
+			<a href="https://www.navercorp.com/" target="_blank" onClick="clickcr(this, 'fot.nhn', '', '', event);">NAVER Corp.</a>
+			<span>All Rights Reserved.</span>
+		</address>
+		
+		
+		
+	</div>
+
+
+
+<script type="text/javascript">
+function isVisible(obj) {
+    if (obj == document) return true
+ 
+    if (!obj) return false
+    if (!obj.parentNode) return false
+    if (obj.style) {
+        if (obj.style.display == 'none') return false
+        if (obj.style.visibility == 'hidden') return false
+    }
+ 
+    if (window.getComputedStyle) {
+        var style = window.getComputedStyle(obj, "")
+        if (style.display == 'none') return false
+        if (style.visibility == 'hidden') return false
+    }
+ 
+    var style = obj.currentStyle
+    if (style) {
+        if (style['display'] == 'none') return false
+        if (style['visibility'] == 'hidden') return false
+    }
+ 
+    return isVisible(obj.parentNode)
+}
+
+function isChildOf(myobj, containerObj) {
+	while(myobj != undefined) {
+		if (myobj == document.body) {
+			break;
+		} 
+		if (myobj == containerObj) {
+			return true;
+		}
+		myobj = myobj.parentElement;
+	}
+	return false;	
+}
+
+function gnbLayerClose(e){
+	var target = e.target ? e.target : e.srcElement;
+	if (isVisible(document.getElementById('gnb_service_lyr')) || isVisible(document.getElementById('gnb_notice_lyr')) ||isVisible(document.getElementById('gnb_my_lyr')) ) {
+		if (!isChildOf(target, document.getElementById('gnb'))) {
+			gnbAllLayerClose();
+		}
+	}	
+}
+
+var isIE = (navigator.userAgent.toLowerCase().indexOf("msie")!=-1 && window.document.all) ? true:false;
+if (isIE) {
+	document.attachEvent('onmousedown', gnbLayerClose);
+} else {
+	window.addEventListener('mousedown', gnbLayerClose);
+}
+
+function showPannel(layerId){
+    var layer = jindo.$(layerId);
+    layer.style.display='block';
+
+    if (layerId == "summary_lyr") {
+        var layerHeight = jindo.$Element(layer).height();
+        jindo.$Element("summary_ifr").height(layerHeight);
+    }
+}
+
+function hidePannel(layerId){
+    var layer = jindo.$(layerId);
+    layer.style.display='none';
+}
+
+function togglePanelFooter(layerId) {
+    var elTargetLayer = jindo.$Element(jindo.$$.getSingle("#" + layerId));
+
+    if (elTargetLayer != null) {
+        if (elTargetLayer.visible()) {
+            hidePannel(layerId);
+        } else {
+            showPannel(layerId);
+        }
+    }
+}
+
+// add data-useragent
+document.documentElement.setAttribute('data-useragent',navigator.userAgent);
+</script>
+</div>
+</body>
+</html>
+
+<script language="javascript" type="text/javascript">
+	jindo.$Fn(function(){
+		jindo.EllipseText.factory(jindo.$$(".new_bbs DIV.sub_section li span.txt"), {nAssistWidth: 9});
+	}).attach(document,'domready');
+</script>

@@ -2,6 +2,6 @@
 
 source functions.sh
 
-read score
+read -p "Enter you score: " score
 
 score_to_grade $score

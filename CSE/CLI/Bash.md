@@ -1,22 +1,125 @@
+# `apt` (Advanced Package Tool) (Linux)
+- Source: https://www.geeksforgeeks.org/apt-get-command-in-linux-with-examples/
+- `apt-get` is a command-line tool which helps in handling packages in Linux. Its main task is to retrieve the information and packages from the authenticated sources for installation, upgrade and removal of packages along with their dependencies.
+## `apt-get`
+### `apt-get update`
+- ***This command is used to synchronize the package index files from their sources again. You need to perform an update before you upgrade or dist-upgrade.***
+### `apt-get upgrade`
+- ***This command is used to install the latest versions of the packages currently installed on the user’s system from the sources enumerated in `/etc/apt/sources.list`. You need to perform an update before the upgrade, so that apt-get knows that new versions of packages are available.***
+### `apt-get install`
+- This command is used to install or upgrade packages. It is followed by one or more package names the user wishes to install. All the dependencies of the desired packages will also be retrieved and installed. ***The user can also select the desired version by following the package name with an ‘equals’ and the desired version number. Both of these version selection methods have the potential to downgrade the packages, so must be used with care.***
+
+# Basic Commands
+## `pwd`: Print working directory
+## `cd`: Change directory
+## `mkdir`: Create a directory
+## `rmdir`: Remove an empty directory
+### `rm -R`: Remove nested directories
+## `ls`
+- Source: https://linuxize.com/post/how-to-list-files-in-linux-using-the-ls-command/
+```sh
+# When used with no options and arguments, `ls` displays a list of the names of all files in the current working directory.
+# `option`
+	# `-l`: The default output of the `ls` command shows only the names of the files and directories, which is not very informative. ***The `-l` option tells ls to print files in a long listing format. When the long listing format is used, you can see the following file information: The file type, The file permissions, Number of hard links to the file, File owner, File group, File size, Date and Time, File name.***
+	# `-a`: To display all files including the hidden files use the `-a` option.
+	# `-R`: The `-R` option tells the `ls` command to display the contents of the subdirectories recursively.
+ls [<option>] [<file>]
+```
+## `open`: Open files
+## `cp`:  Copy a file to another directory
+## `mv`: Move a file
+## `sudo`: Execute commands with superuser privileges
+## `exit`
+- This command will close out the current session in the Terminal.
+
 - Reference: https://engineer-mole.tistory.com/200
 - 변수에 액세스할 때 변수명의 앞에 $를 넣는다. 혹은 $넣어서 변수를 {}로 감싼다.
 - 변수의 값이 덮어 쓰기되는 것을 방지하기 위해서는 readonly를 사용한다. (`readonly var`)
 - `$0`: 스크립트명
 - `&&`: And
 - `||`: Or
-- Shell script 실행 권한 부여
-	- `chmod +x ./score2grade.sh`
-	- `chmod`: Change mode
 - `-iname`: Turns off case sensitivity.
 - `-name`: Retain case sensitivity.
 
-# `wc`
+# Shell Script 실행 권한 부여
+```sh
+# `chmod`: Change mode
+chmod +x ./<file>
+```
+
+# Read Value from Input
+```sh
+read <variable1> <variable2>
+
+# `"<message>"`와 같은 줄에서 변수를 입력하도록 합니다.
+read -p "<message>" <variable1> <variable2> ...
+
+# 입력 받은 값을 표시하지 않습니다.
+read -s ...
+```
+
+# Define and Run Function
+```sh
+# Define function
+<function>() {
+	$1...
+	$2...
+	...
+}
+...
+
+# Run function
+<function> $<argument1> $<argument2> ...
+```
+
+# Import Function
+```sh
+# `<file>`: "....sh"
+source <file>
+```
+
+# IF Statement
+```sh
+if ...
+then
+	...
+elif ...
+then
+	...
+else
+	...
+fi
+```
+
+# Read File Line by Line
+```sh
+while read line
+do
+	...
+done < <file>
+```
+
+# Find File by Pattern
+```sh
+find <path> -name "<pattern1>"
+
+# Example
+# `-or`과 `-o`는 서로 동일합니다.
+# `-and`와 `-a`는 서로 동일합니다.
+# `-not`와 `!`는 서로 동일합니다.
+find . -name "*.heic" -or -name "*.HEIC"
+```
+
+# `wc` (word count)
 ```sh
 # `-w`: Count words.
 # `-c`: Count bytes.
 # `-m`: Count characters.
 # `-l`: Count lines.
 wc -l <file>
+
+# To omit the <file>
+wc -l < <file>
 ```
 
 # Check `charset`
@@ -35,7 +138,7 @@ iconv -c -f <encoding1> -t <encoding2> <file1> > <file2>
 iconv -c -f euc-kr -t utf-8 stock_flitto.html > stock_flitto_enc.html
 ```
 
-# `cat`
+# `cat` (concatenate)
 ```sh
 # 파일의 내용을 순서대로 출력
 cat <file1> <file2> ...
@@ -53,27 +156,64 @@ cat <file1> <file2> > <file3>
 cat <file1> > <file2>
 ```
 
-# Regular Expression
-
-# grep
+# `curl` (Client URL)
 ```sh
-# <options>
-	# `-o`: 매치되는 문자열만 표시.
+# `<url>`의 html 파일을 `<file>`에 저장합니다.
+curl -s <url> > <file>
+```
+
+# `grep`
+```sh
+# `<option>`
+	# `-o`: 매치되는 문자열만 표시합니다.
 	# `-E`: Extended grep includes meta characters that were added later.
 grep [<option>] <pattern> <file>
 ```
+## Text between two texts
+```sh
+echo $<text> | grep -P -o "(?<=(<text1> )).*(?= <text2>)"
+```
+## Extract Text from File
+```sh
+grep "<regex>" <file>
 
-# Split Text
+# Example
+text=$(grep ".*현재가.*</dd>$" stock_flitto_enc.html)
+```
+## Extract Text from Variable
+```sh
+<variable1>=$(echo $<variable2> | grep -o -E "<regex>")
+```
+
+# `sed`
+## Replace Text
+```sh
+sed -e "s/<text1>/<text2/g"
+```
+
+# `cut`
+## Split Text by Character
 ```sh
 echo $<text> | cut -d "<character>" -f1
 ```
 
-# Text between two texts
+# `sort`
 ```sh
-echo $<text> | grep -Po "(?<=(<text1> )).*(?= <text2>)"
+# `<option>`
+	# `-r`, `--reverse`: 역순으로 정렬합니다.
+	# `-u`, `--unique`: 정렬 후 중복을 제거합니다.
+sort [<option>] <file>
+... | sort [<option>]
 ```
 
-# Replace Text
+# `awk`
 ```sh
-:%s/<text1>/<text2>
+awk "<pattern>" <file>
+awk "{<action>}" <file>
+awk "<pattern> {<action>}" <file>
+
+# `$0`: 전체 컬럼
+# `$n`: `n`번째 컬럼
 ```
+
+# Regular Expression

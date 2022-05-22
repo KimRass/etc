@@ -1,6 +1,6 @@
 #!/bin/sh
 
-for i in `find . -name "*.txt"`
+for i in $(find . -name "*.txt")
 do
     n_lines=$(wc -l < $i)
     # echo $n_lines

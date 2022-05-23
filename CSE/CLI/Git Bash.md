@@ -64,6 +64,22 @@ git add .
 git reset HEAD <file1> <file2> ...
 ```
 
+# `git rm`
+```bash
+# 로컬 디렉토리와 git저장소 모두에서 파일을 삭제할 수 있습니다.
+git rm <file1> <file2> ...
+
+# 로컬 디렉토리는 유지, git저장소에서만 삭제합니다.
+git rm --cached <file1> <file2> ...
+```
+
+# Remove Untracked Files
+```bash
+git clean -f
+# 디렉토리까지 지웁니다.
+git clean -fd
+```
+
 # `git restore`
 - The `git restore` command helps to unstage or even discard uncommitted local changes.
 

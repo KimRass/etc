@@ -13,7 +13,7 @@ do
             then
                 echo $(basename $i) : $line
             fi
-            number=$(( $number + 1 ))
+            number=$(($number+1))
         done < $i
     fi
 done

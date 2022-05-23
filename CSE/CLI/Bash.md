@@ -41,11 +41,35 @@ ls [<option>] [<file>]
 - `-iname`: Turns off case sensitivity.
 - `-name`: Retain case sensitivity.
 
-# Shell Script 실행 권한 부여
+# Change Mode
 ```sh
-# `chmod`: Change mode
-chmod +x ./<file>
+# `+`: Grant
+# `-`: 박탈
+# `x`: Excute
+# `r`: Read
+# `w`: Write
+chmod +x <file>
 ```
+
+# Operators
+## Relational Operators
+- `-eq`: Equal to
+- `-ne`: Not equal to
+- `-gt`: Greater than
+- `-lt`: Less than
+- `-ge`: Greater than or equal to
+- `-le`: Less than or equal to
+## Arithmetic Operators
+```sh
+# 아래 세 줄은 전부 동일한 코드입니다.
+((number=number + 1))
+number=$((number+1))
+number=$(($number+1))
+```
+## Boolean Operators
+- `-not`, `!`: Logical negation
+- `-and`, `-a`: Logical AND
+- `-or`, `-o`: Logical OR
 
 # Read Value from Input
 ```sh
@@ -80,11 +104,9 @@ source <file>
 
 # IF Statement
 ```sh
-if ...
-then
+if ...; then
 	...
-elif ...
-then
+elif ...; then
 	...
 else
 	...
@@ -93,8 +115,7 @@ fi
 
 # Read File Line by Line
 ```sh
-while read line
-do
+while read line; do
 	...
 done < <file>
 ```
@@ -104,9 +125,6 @@ done < <file>
 find <path> -name "<pattern1>"
 
 # Example
-# `-or`과 `-o`는 서로 동일합니다.
-# `-and`와 `-a`는 서로 동일합니다.
-# `-not`와 `!`는 서로 동일합니다.
 find . -name "*.heic" -or -name "*.HEIC"
 ```
 
@@ -138,6 +156,12 @@ iconv -c -f <encoding1> -t <encoding2> <file1> > <file2>
 iconv -c -f euc-kr -t utf-8 stock_flitto.html > stock_flitto_enc.html
 ```
 
+# `echo`
+```sh
+# 개행하지 않고 같은 줄에 출력합니다.
+echo -n ...
+```
+
 # `cat` (concatenate)
 ```sh
 # 파일의 내용을 순서대로 출력
@@ -145,9 +169,9 @@ cat <file1> <file2> ...
 
 # 입력한 내용으로 새로운 파일을 만듭니다.
 # 내용을 입력하고 "ctrl + d"를 눌러 저장한다.)
-# 기존 파일 내용을 지우고 처음부터 새로 입력합니다.
+# 기존 파일 내용을 지우고 처음부터 새로 입력합니다. (Write or overwrite)
 cat > <file>
-# 기존 파일 내용에 연속해서 기록합니다.
+# 기존 파일 내용에 연속해서 기록합니다. (Append)
 cat >> <file>
 
 # Merge files into the one.
@@ -155,11 +179,26 @@ cat <file1> <file2> > <file3>
 # Copy
 cat <file1> > <file2>
 ```
+## Create Empty File
+```sh
+# 파일이 없을 경우 새로 빈 파일을 생성하고 파일이 있을 경우 파일은 그대로 둔 채 그 내용만 삭제합니다.
+cat /dev/null > <file>
+```
 
 # `curl` (Client URL)
 ```sh
 # `<url>`의 html 파일을 `<file>`에 저장합니다.
 curl -s <url> > <file>
+```
+## Send JSON
+```sh
+# `--request`와 `-X`는 서로 동일합니다.
+# `--header`와 `-H`는 서로 동일합니다.
+# Example
+curl --request POST \
+    --header "Content-Type: application/json" \
+    --data "$json" \
+    $slack_webhook_url
 ```
 
 # `grep`
@@ -214,6 +253,22 @@ awk "<pattern> {<action>}" <file>
 
 # `$0`: 전체 컬럼
 # `$n`: `n`번째 컬럼
+```
+
+# `file`
+```sh
+# 파일의 유형을 출력합니다.
+file <file>
+```
+
+# Move or Copy File
+```sh
+# Move
+# 이름을 변경하여 옮기는 것도 가능합니다.
+mv <file> <dir>
+
+# Copy
+cp <file> <dir>
 ```
 
 # Regular Expression

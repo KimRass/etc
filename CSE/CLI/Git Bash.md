@@ -12,6 +12,10 @@ git clone "https://github.com/....git"
 # For private repository
 git clone "https://<user_name>@github.com/....git"
 ```
+## Clone Specific Branch
+```bash
+git clone -b <branch> --single-branch "https://...github.com/....git"
+```
 
 # `git status`
 
@@ -177,4 +181,9 @@ sudo find / -name ".DS_Store" -depth -exec rm {} \;
 ## Stop ".DS_Store" from Generating
 ```sh
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+```
+
+# Convert from CRLF to LF
+```sh
+git config --global core.autocrlf true
 ```

@@ -272,3 +272,9 @@ cp <file> <dir>
 ```
 
 # Regular Expression
+```sh
+# Directory or directory name
+...
+# File name or basename
+${<text>##*/}
+```

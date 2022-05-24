@@ -26,30 +26,27 @@ git config --global user.email "<user_email>"
 git config --global user.name "<user_name>"
 ```
 
-# `git remote`
+# Remote
 - The `git remote` command lets you create, view, and delete connections to other repositories. Remote connections are more like bookmarks rather than direct links into other repositories. Instead of providing real-time access to another repository, they serve as convenient names that can be used to reference a not-so-convenient URL.
 ```bash
 git remote -v
 ```
 - List the remote connections you have to other repositories. With `-v`, it includes the URL of each connection.
-## `git remote add`
+## Add Remote
 ```bash
-git remote add <name> <url>
-```
-```bash
+git remote add <remote_name> <repository_url>
+# Example
 git remote add origin "https://github.com/KimRass/Programming.git"
 ```
 - Create a new connection to a remote repository. After adding a remote, you’ll be able to use `＜name＞` as a convenient shortcut for `＜url＞` in other Git commands.
-## `git remote remove`
+## Remove Remote
 ```bash
-git remote rm <name>
+git remote rm <remote_name>
 ```
-- Remove the connection to the remote repository called `＜name＞`.
-## `git remote rename`
+## Rename Remote
 ```bash
 git remote rename <old-name> <new-name>
 ```
-- Rename a remote connection from `＜old-name＞` to `＜new-name＞`.
 ## `git remote set-url`
 ```bash
 git remote set-url origin "git@github.com:KimRass/Work.git"
@@ -57,18 +54,18 @@ git remote set-url origin "git@github.com:KimRass/Work.git"
 - https에서 ssh URL로 전환.
 - SSH Public Key 등록한 다음에도 Git clone 시 ID/Password 인증을 요구하는 경우에는 git이 SSH로 생성된 것이 아니고, http로 생성된  경우입니다. 이 경우 현재 git의 URL을 `git remote -v`로  확인하고 SSH URL로 전환시켜줘야 합니다.
 
-# `git add`
+# Add Change to the Staging Area
 ```bash
 git add <file1> <file2> ...
 git add .
 ```
 - The `git add` command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run `git commit`.
 ## Undo `git add`
-```sh
+```bash
 git reset HEAD <file1> <file2> ...
 ```
 
-# `git rm`
+# Remove File from the Staging Area
 ```bash
 # 로컬 디렉토리와 git저장소 모두에서 파일을 삭제할 수 있습니다.
 git rm <file1> <file2> ...
@@ -77,7 +74,7 @@ git rm <file1> <file2> ...
 git rm --cached <file1> <file2> ...
 ```
 
-# Remove Untracked Files
+# Remove Untracked File
 ```bash
 git clean -f
 # 디렉토리까지 지웁니다.
@@ -87,7 +84,7 @@ git clean -fd
 # `git restore`
 - The `git restore` command helps to unstage or even discard uncommitted local changes.
 
-# `git commit`
+# Commit File
 ```bash
 # The `git commit` command is used to commit a snapshot of the staging directory to the repositories commit history.
 git commit -m "<message>"
@@ -95,8 +92,8 @@ git commit -m "<message>"
 # `--amend`
 	# 스테이징에 추가된 내용을 반영해주는 동시에 커밋 메시지도 변경해줍니다. 따라서 변경할 내용이 없을 때도 커밋메시지를 변경하고 싶을 때 자주 사용합니다.
 ```
-## Undo `git commit`
-```sh
+## Undo Commit File
+```bash
 # commit을 취소하고 해당 파일들은 unstaged 상태로 워킹 디렉터리에 보존
 git reset --mixed HEAD^
 # commit을 취소하고 해당 파일들은 staged 상태로 워킹 디렉터리에 보존
@@ -108,16 +105,9 @@ git reset --soft HEAD^
 - Pushing has the potential to overwrite changes, caution should be taken when pushing.
 - To prevent you from overwriting commits, Git won’t let you push when it results in a non-fast-forward merge in the destination repository.
 ```bash
-git bash
-```
-```bash
-git push <remote-name> <branch-name>
-```
-```bash
-git push origin master
-```
-```bash
-git push -f origin master
+git push [<remote_name> <branch_name>]
+# Force `git push`
+git push -f [<remote_name> <branch_name>]
 ```
 
 # `git fetch`
@@ -175,15 +165,15 @@ git branch -d "..."
 
 # ".DS_Store"
 ## Delete ALL ".DS_Store"
-```sh
+```bash
 sudo find / -name ".DS_Store" -depth -exec rm {} \;
 ```
 ## Stop ".DS_Store" from Generating
-```sh
+```bash
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```
 
 # Convert from CRLF to LF
-```sh
+```bash
 git config --global core.autocrlf true
 ```

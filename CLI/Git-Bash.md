@@ -141,6 +141,32 @@ git reset HEAD~1
 
 # `git revert`
 
+# Branch
+## Create Branch
+```bash
+git checkout -b <branch_name>
+```
+### Create Branch from Another branch
+```bash
+git pull origin <branch_name1>
+git checkout <branch_name1>
+git checkout -b <branch_name2> <branch_name2>
+```
+## Switch to Branch
+```bash
+git checkout <branch_name>
+```
+## Merge
+```bash
+# `<branch_name>`에서 작업 내용을 가져옵니다.
+git merge <branch_name>
+```
+## Abort Merge
+```bash
+git merge --abort
+```
+
+
 # Private Repository
 ```bash
 # ssh public key 생성.

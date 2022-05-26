@@ -88,9 +88,8 @@ git clean -fd
 ```bash
 # The `git commit` command is used to commit a snapshot of the staging directory to the repositories commit history.
 git commit -m "<message>"
-
-# `--amend`
-	# 스테이징에 추가된 내용을 반영해주는 동시에 커밋 메시지도 변경해줍니다. 따라서 변경할 내용이 없을 때도 커밋메시지를 변경하고 싶을 때 자주 사용합니다.
+# Commit과 함께 메시지를 변경합니다.
+git commit --amend -m "<message>"
 ```
 ## Undo Commit File
 ```bash

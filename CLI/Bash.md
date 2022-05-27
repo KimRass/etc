@@ -233,6 +233,7 @@ sed -e "s/<text1>/<text2/g"
 # `cut`
 ## Split Text by Character
 ```sh
+# `-c1-2`: The first two characters
 echo $<text> | cut -d "<character>" -f1
 ```
 

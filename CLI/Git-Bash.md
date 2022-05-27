@@ -123,6 +123,14 @@ git reset --hard [origin/main]
 git pull [origin main]
 ```
 
+# `git clean`
+```bash
+# Delete untracked files
+git clean -f
+# Delete untacked files and directories
+git clean -fd
+```
+
 # `git stash`
 - The `git stash` command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy.
 - `git stash` temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.

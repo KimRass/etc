@@ -22,8 +22,8 @@ git clone -b <branch> --single-branch "https://...github.com/....git"
 # `git config`
 ```bash
 # Global level configuration(`--global`) is user-specific, meaning it is applied to an operating system user. Global configuration values are stored in a file that is located in a user's home directory.
-git config --global user.email "<user_email>"
-git config --global user.name "<user_name>"
+git config [--global] user.email "<user_email>"
+git config [--global] user.name "<user_name>"
 ```
 
 # Remote

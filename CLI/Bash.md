@@ -9,6 +9,20 @@
 ### `apt-get install`
 - This command is used to install or upgrade packages. It is followed by one or more package names the user wishes to install. All the dependencies of the desired packages will also be retrieved and installed. ***The user can also select the desired version by following the package name with an ‘equals’ and the desired version number. Both of these version selection methods have the potential to downgrade the packages, so must be used with care.***
 
+# Python Environment Path
+```sh
+ls -a
+# .bash_profile 없다면
+touch .bash_profile
+open .bash_profile
+# 다음 한 줄 추가
+export PATH=${PATH}:/Users/jongbeom.kim/Desktop/workspace/flitto/data_mgmt
+# 수정된 경로 적용
+source .bash_profile
+# 확인
+echo $PATH
+```
+
 # Basic Commands
 ## `pwd`: Print working directory
 ## `cd`: Change directory

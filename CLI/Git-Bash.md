@@ -99,7 +99,7 @@ git reset --mixed HEAD^
 git reset --soft HEAD^
 ```
 
-# `git push`
+# Push
 - The `git push` command is used to upload local repository content to a remote repository.
 - Pushing has the potential to overwrite changes, caution should be taken when pushing.
 - To prevent you from overwriting commits, Git won’t let you push when it results in a non-fast-forward merge in the destination repository.
@@ -108,9 +108,6 @@ git push [<remote_name> <branch_name>]
 # Force `git push`
 git push -f [<remote_name> <branch_name>]
 ```
-
-# `git fetch`
-- 원격저장소 변화정보 가져오기.
 
 # `git pull`
 ```bash
@@ -131,16 +128,23 @@ git clean -f
 git clean -fd
 ```
 
-# `git stash`
-- The `git stash` command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy.
-- `git stash` temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
-## `git stash pop`
-- Reapply previously stashed changes.
-## `git stash apply`
+# Stash
+```bash
+# The `git stash` command takes your uncommitted changes (both staged and unstaged), saves them away for later use, and then reverts them from your working copy.
+# `git stash` temporarily shelves (or stashes) changes you've made to your working copy so you can work on something else, and then come back and re-apply them later on.
+git stash
+...
+# Reapply previously stashed changes.
+git stash pop
+```
 
-# `git reflog`
+# Fetch
+```bash
+# 원격저장소 변화정보 가져오기.
+git fetch
+```
 
-# `git reset`
+# Reset
 ```bash
 git reset HEAD~1
 ```
@@ -173,15 +177,6 @@ git merge <branch_name>
 git merge --abort
 ```
 
-
-# Private Repository
-```bash
-# ssh public key 생성.
-ssh-keygen
-cat ~/.ssh/id_rsa.pub
-ssh -T git@github.com
-```
-
 # From `git clone` to Pull Request
 ```bash
 git clone "https://github.com/....git"
@@ -210,3 +205,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```bash
 git config --global core.autocrlf true
 ```
+
+# 메시지 입력 방법
+- Source: https://velog.io/@ssmin0606/%EA%B0%9C%EB%B0%9C%ED%88%B4-Please-enter-a-commit-message-to-explain-why-this-merge-is-necessary-especially-if-it-merges-an-updated-upstream-into-a-topic-branch-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0-git-bash
+- "Please enter a commit message to explain why this merge is necessary, especially if it merges an updated upstream into a topic branch"
+- 위 상황에서 메시지 입력 방법
+- `i` -> 메시지 입력 -> Esc -> `:wq` -> Enter

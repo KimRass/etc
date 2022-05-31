@@ -11,16 +11,23 @@
 
 # Python Environment Path
 ```sh
+cd
 ls -a
 # .bash_profile 없다면
 touch .bash_profile
 open .bash_profile
-# 다음 한 줄 추가
-export PATH=${PATH}:/Users/jongbeom.kim/Desktop/workspace/flitto/data_mgmt
+# 내용 추가
+export PYTHONPATH="/Users/jongbeom.kim/Desktop/workspace/flitto/data_mgmt"
+export GOOGLE_APPLICATION_CREDENTIALS="/Users/jongbeom.kim/Desktop/workspace/Github/Work/flitto-351906-36a591c7de9c.json"
 # 수정된 경로 적용
 source .bash_profile
 # 확인
 echo $PATH
+```
+
+# "command not found"
+```sh
+export PATH=%PATH:/bin:/usr/local/bin:/usr/bin
 ```
 
 # Basic Commands

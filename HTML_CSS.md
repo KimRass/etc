@@ -1,7 +1,14 @@
 # HTML
+## HTML Escape
+- `"<"`: `"&lt;"`
+- `">"`: `"&gt;"`
+- `" "`: `&nbsp;`
+- `"&"`: `"&amp;"`
+- `"""`: `"&quot;"`
+- `"'"`: `"&apos;"`
+- `"©"`: `"&copy;"`
 ## 기본 구조
-
-```xml
+```html
 <!doctype html>
 <html lang="ko">
     <head>
@@ -17,15 +24,15 @@
 * parent elements<-> child elements
 * sibling elements
 ## comment tags
-```xml
+```html
 <!-- 여기에 작성되는 내용들은 모두 주석 처리가 됩니다. -->
 ```
 ## hypertext reference
-```xml
+```html
 <h2 id="top">개발</h2>
 <a href="#top">개발 페이지로 이동</a>
 ```
-```xml
+```html
 <a href="http://www.naver.com", target="_blank">네이버</a>
 ```
 ## container
@@ -38,7 +45,7 @@
 * \<ul> : unordered list. 순서가 없는 리스트
 * \<ol> : ordered list. 순서가 있는 리스트
 * \<li>만 자식 태그로 가질 수 있음
-```xml
+```html
 <ul> 
     <li>콩나물</li> 
     <li>파</li> 
@@ -48,7 +55,7 @@
 * \<dl> : definition list
 * \<dt> : definition term.
 * \<dd> : definition description. 용어의 정의
-```xml
+```html
 <dl>
     <dt>리플리 증후군</dt>
     <dd>허구의 세계를 진실이라 믿고 거짓된 말과 행동을 상습적으로 반복하는 반사회적 성격장애를 뜻하는 용어</dd>
@@ -59,13 +66,13 @@
 </dl>
 ```
 ## image
-```xml
+```html
 <img src="./images/pizza.png" alt="피자" width="400" height="200">
 ```
 * \./ : 현재 폴더
 * \../ : 상위 폴더
 ## table
-```xml
+```html
 <table>
     <tr>
         <td>1</td>
@@ -96,8 +103,8 @@
 * \<tr> : table row
 * \<th> : table head
 * \<td> : table data
-```xml
-<table> 
+```html
+<table>
     <caption>table</caption>
     <thead>
         <tr>
@@ -111,18 +118,18 @@
           <td rowspan="2">$100</td>
         </tr>
         <tr>
-           <td>February</td>
-        </tr> 
+          <td>February</td>
+        </tr>
     </tbody>
     <tfoot>
         <tr>
           <td colspan="2">Sum</td>
         </tr>
     </tfoot>
- </table>
+</table>
 ```
 ## form
-```xml
+```html
 <form action="http://www.naver.com" method="get">
 <label for="userid">아이디 : </label><input type="text" placeholder="id" id="userid" name="id"><br>
 <label for="userpw">비밀번호 : </abel><input type="password" id="userpw" name="pw">
@@ -131,34 +138,34 @@
 - method=" : action 값의 페이지로 이동
 - method="get" : action?name1=value1&name1=value1 형태의 페이지로 이동
 ## fieldset, legend
-```xml
+```html
 <fieldset>
     <legend>부가 입력 사항</legend>
 </fieldset>
 ```
 ## input
-```xml
+```html
 성별 : <label for="male">남자<input type="radio" name="gender" checked id="male"><label for="female"> 여자</label><input type="radio" name="gender" id="female">
 ```
-```xml
+```html
 취미 : 등산<input type="checkbox" name="hobby">독서<input type="checkbox" name="hobby">운동<input type="checkbox" name="hobby"><br>
 ```
 <input type="submit" value="제출"><br>
-```xml
+```html
 <input type="reset" value="초기화"><br>
 ```
 <input type="button" value="버튼"><br>
-```xml
+```html
 <input type="image" src="http://placehold.it/50x50?text=click" alt="클릭" width="50" height="50">
 ```
 ## button
-```xml
+```html
 <button type="submit">제출</button><br>
 <button type="reset">초기화</button>
 ```
 * \<br> : linebreak
 ## select
-```xml
+```html
 지역 : <select>
     <option>서울</option>
     <option>경기</option>
@@ -166,11 +173,11 @@
 </select>
 ```
 ## textarea
-```xml
+```html
 경력 : <textarea cols="30" rows="10" placeholder="자유형식으로 작성 부탁드립니다."></textarea>
 ```
 ## semantic markup
-```xml
+```html
 <b>굵은</b> vs <strong>중요한</strong>
 <i>기울어진</i> vs <em>강조하는</em>
 <u>밑줄친</u> vs <ins>새롭게 추가된</ins>
@@ -189,7 +196,7 @@
 * \<time>
 # CSS
 ## 기본 구조(.css)
-```xml
+```html
 <head>
     h1{color:yellow;font-size:2em;}
 </head>
@@ -201,7 +208,7 @@
 * property - color
 * value - yellow
 ## application
-```xml
+```html
 <link rel="stylesheet" href="./style.css">
 ```
 ## selector 
@@ -212,46 +219,46 @@
 * 문서 내 유일한 element에 사용
 
 ### attribute selector
-```xml
+```html
 p[class]{color:silver;}
 p[class][id]{text-decoration:underline;}
 ```
-```xml
+```html
 p[class="foo"]{color:silver;}
 p[id="title"]{text-decoration:underline;}
 ```
-```xml
+```html
 p[class~="color"]{font-style:italic;} /*공백으로 구분된 "color"를 포함*/
 p[class*="color"]{font-style:italic;} /*"color"를 포함*/
 p[class^="color"]{font-style:italic;} /*"color"로 시작*/
 p[class$="color"]{font-style:italic;} /*"color"로 끝*/
 ```
 ### descendant selector
-```xml
+```html
 div span{color:red;}
 ```
 ### child selector
-```xml
+```html
 div>h1{color:red;}
 ```
 ### general sibling selector
-```xml
+```html
 div~p{color:red;}
 ```
 ### adjacent sibling selector
-```xml
+```html
 div+p{color:red;}
 ```
 ## pseudo class
-```xml
+```html
 li:first-child{color:red;} /*첫 번째 child element 선택*/
 li:last-child{color:blue;} /*마지막 child element 선택*/
 ```
-```xml
+```html
 a:link{color:black;} /*아직 방문하지 않은 anchor*/
 a:visited{color:blue;} /*이미 방문한 anchor*/
 ```
-```xml
+```html
 a:focus{background-color:yellow;}
 a:hover{font-weight:bold;}
 a:active{color:red;}
@@ -260,7 +267,7 @@ a:active{color:red;}
 - :hover: 마우스 포인터가 있는 element에 적용
 - :active: 사용자 입력으로 활성화된 element에 적용
 ## pseudo element
-```xml
+```html
 p::before{content:"###"}
 p::after{content:"!!!"}
 p::first-line{color:blue;}
@@ -272,14 +279,14 @@ p::first-letter{color:blue;}
 - :first-letter : block level element의 첫 번째 문자
 ## cascading order
 ### specificity
-```xml
+```html
 <p id="page" style="color:blue">Lorem impusm</p> /*inline style : 1, 0, 0, 0*/
 div#page{...} /*id selector : 0, 1, 0, 1*/
 p.bright em.dark{...} /*class selector : 0, 0, 2, 2*/
 body h1{...} /*0, 0, 0, 2*/
 ```
 ### !important
-```xml
+```html
 p#page{color:red!important;}
 ```
 ### inheritance
@@ -289,7 +296,7 @@ p#page{color:red!important;}
 
 ## attribute
 ### length
-```xml
+```html
 .div{font-size:16px;}
 ```
 - px : 1px=1/96inch
@@ -298,7 +305,7 @@ p#page{color:red!important;}
 - em : **parent element의 font-size 기준 환산.** 소수점 3자리까지 표현 가능.
 - rem : 최상위 element(보통은 html 태그)의 font-size 기준 환산.
 - vw : viewport의 width값을 기준으로 1%의 값으로 계산.
-```xml
+```html
 <h1 style="color:red">heading</h1>
 <h1 style="color:#ff0000">heading</h1>
 <h1 style="color:#f00">heading</h1>
@@ -307,7 +314,7 @@ p#page{color:red!important;}
 ```
 - 6자리의 16진수에서 각각의 두 자리가 같은 값을 가지면 3자리로 축약하여 사용할 수 있습니다. 예를 들어, #aa11cc 는 #a1c로 축약하여 사용할 수 있습니다.
 ### background
-```xml
+```html
 div{
   height:1500px;
   background-color:yellow;
@@ -317,7 +324,7 @@ div{
   background-attachment:scroll; /*scroll, local, fixed*/
 }
 ```
-```xml
+```html
 div{
   height:1500px;
   background:yellow url(https://www.w3schools.com/CSSref/img_tree.gif) no-repeat center top scroll;
@@ -329,7 +336,7 @@ div{
 ### padding
 - percent : specifies the padding in percent of the **width** of the containing element.
 ### border
-```xml
+```html
 div{
   border-top-width:10px; /*border-top, border-bottom, border-right, border-left*/
   border-right-style:double; /*none, soild, double, dotted...*/
@@ -352,7 +359,7 @@ This does not happen on horizontal (left and right) margins! Only vertical (top 
 - ![typography.png](/wikis/2670857615939396646/files/2823392681883991974)
 - baseline : 소문자 x 기준 하단 라인.
 ### font-family
-```xml
+```html
 font-family: Helvetica, Dotum, '돋움', Apple SD Gothic Neo, sans-serif;
 ```
 - 가장 먼저 Helvetica를 사용하고, 이를 사용할 수 없을 때 Dotum을 사용하는 방식으로 우선순위에 따라 차례대로 적용 됩니다.
@@ -382,7 +389,7 @@ normal, italic, oblique
 ### font-variant
 - normal, small-caps
 ### web fonts
-```xml
+```html
 @font-face{
     font-family:webNanumGothic; /*이름*/
     src:url(NanumGothic.eot); /*경로*/
@@ -404,7 +411,7 @@ h1{font-family:webNanumGothic;}
 - length, percent
 - percent : **parent element의 width 기준.**
 ### text-decoration
-```xml
+```html
 text-decoration:text-decoration-line text-decoration-color text-decoration-style;
 ```
 - text-decoration-line : none(기본값), underline,  overline, line-through
@@ -474,12 +481,12 @@ text-decoration:text-decoration-line text-decoration-color text-decoration-style
 - auto : parent element와 동일한 stack order 설정.
 
 ## @media
-```xml
+```html
 @media mediaqueries {/* style rules */}
 ```
 - media types : all, print, screen
 - media features : width, orientation
-```xml
+```html
 media_query_list /* 여러개의 미디어 쿼리로 이루어진 리스트로 작성 가능하며, 쉼표를 이용해서 구분 */
  : S* [media_query [ ',' S* media_query ]* ]?
  ;
@@ -497,7 +504,7 @@ expression
 - a* : a가 0번 또는 그 이상 계속 나올 수 있음.
 
 ## viewport
-```xml
+```html
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 ```
 - width(height) : px 단위의 수치가 들어갈 수 있지만, 대부분 특수 키워드인 "device-width(height)"를 사용.

@@ -1,11 +1,11 @@
-- Source: https://www.atlassian.com/git/tutorials/git-bash
-- *Git Bash is an application for Microsoft Windows environments* which provides an emulation layer for a Git command line experience. Bash is an acronym for Bourne Again Shell. ***A shell is a terminal application used to interface with an operating system through written commands. Bash is a popular default shell on Linux and macOS. Git Bash is a package that installs Bash, some common bash utilities, and Git on a Windows operating system.***
-- 
-# `git init`
-- `git init` is a one-time command you use during the initial setup of a new repository.
-- Executing `git init` creates a ".git" subdirectory in the current working directory, which contains all of the necessary Git metadata for the new repository.
+# Initialize
+```bash
+# `git init` is a one-time command you use during the initial setup of a new repository.
+# Executing `git init` creates a ".git" subdirectory in the current working directory, which contains all of the necessary Git metadata for the new repository.
+git init
+```
 
-# `git clone`
+# Clone Repository
 ```bash
 # For public repository
 git clone "https://github.com/....git"
@@ -17,9 +17,7 @@ git clone "https://<user_name>@github.com/....git"
 git clone -b <branch> --single-branch "https://...github.com/....git"
 ```
 
-# `git status`
-
-# `git config`
+# Configure User Information
 ```bash
 # Global level configuration(`--global`) is user-specific, meaning it is applied to an operating system user. Global configuration values are stored in a file that is located in a user's home directory.
 git config [--global] user.email "<user_email>"
@@ -34,32 +32,28 @@ git remote -v
 - List the remote connections you have to other repositories. With `-v`, it includes the URL of each connection.
 ## Add Remote
 ```bash
+# Create a new connection to a remote repository. After adding a remote, you’ll be able to use `＜remote_name＞` as a convenient shortcut for `＜repository_url＞` in other Git commands.
 git remote add <remote_name> <repository_url>
-# Example
-git remote add origin "https://github.com/KimRass/Programming.git"
 ```
-- Create a new connection to a remote repository. After adding a remote, you’ll be able to use `＜name＞` as a convenient shortcut for `＜url＞` in other Git commands.
 ## Remove Remote
 ```bash
 git remote rm <remote_name>
 ```
-## Rename Remote
+## Modify Remote Name
 ```bash
 git remote rename <old-name> <new-name>
 ```
-## `git remote set-url`
+## Modify Repository URL
 ```bash
-git remote set-url origin "git@github.com:KimRass/Work.git"
+git remote set-url <remote_name> "<repository_url>"
 ```
-- https에서 ssh URL로 전환.
-- SSH Public Key 등록한 다음에도 Git clone 시 ID/Password 인증을 요구하는 경우에는 git이 SSH로 생성된 것이 아니고, http로 생성된  경우입니다. 이 경우 현재 git의 URL을 `git remote -v`로  확인하고 SSH URL로 전환시켜줘야 합니다.
 
 # Add Change to the Staging Area
 ```bash
+# The `git add` command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, `git add` doesn't really affect the repository in any significant way—changes are not actually recorded until you run `git commit`.
 git add <file1> <file2> ...
 git add .
 ```
-- The `git add` command adds a change in the working directory to the staging area. It tells Git that you want to include updates to a particular file in the next commit. However, git add doesn't really affect the repository in any significant way—changes are not actually recorded until you run `git commit`.
 ## Undo `git add`
 ```bash
 git reset HEAD <file1> <file2> ...
@@ -69,7 +63,6 @@ git reset HEAD <file1> <file2> ...
 ```bash
 # 로컬 디렉토리와 git저장소 모두에서 파일을 삭제할 수 있습니다.
 git rm <file1> <file2> ...
-
 # 로컬 디렉토리는 유지, git저장소에서만 삭제합니다.
 git rm --cached <file1> <file2> ...
 ```
@@ -109,15 +102,15 @@ git push [<remote_name> <branch_name>]
 git push -f [<remote_name> <branch_name>]
 ```
 
-# `git pull`
+# Pull Repository
 ```bash
-git pull [origin main]
+git pull [<remote_name> <branch_name>]
 ```
 ## Force `git pull`
 ```bash
 git fetch --all
-git reset --hard [origin/main]
-git pull [origin main]
+git reset --hard [<remote_name>/<branch_name>]
+git pull [<remote_name> <branch_name>]
 ```
 
 # `git clean`
@@ -146,11 +139,9 @@ git fetch
 
 # Reset
 ```bash
+# Move the current branch backward by `1` commits, effectively removing the two snapshots we just created from the project history. Remember that this kind of reset should only be used on unpublished commits. Never perform the above operation if you’ve already pushed your commits to a shared repository.
 git reset HEAD~1
 ```
-- Move the current branch backward by `1` commits, effectively removing the two snapshots we just created from the project history. Remember that this kind of reset should only be used on unpublished commits. Never perform the above operation if you’ve already pushed your commits to a shared repository.
-
-# `git revert`
 
 # Branch
 ## Create Branch
@@ -175,20 +166,6 @@ git merge <branch_name>
 ## Abort Merge
 ```bash
 git merge --abort
-```
-
-# From `git clone` to Pull Request
-```bash
-git clone "https://github.com/....git"
-git remote add origin "https://github.com/....git"
-git checkout -b "..."
-git add "..."
-git commit -m "..."
-git push
-...
-깃헙에서 "Pull requests" -> "New pull request" -> merge 완료되면
-git pull origin "devel"
-git branch -d "..."
 ```
 
 # ".DS_Store"

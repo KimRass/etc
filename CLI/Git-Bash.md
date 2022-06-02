@@ -14,7 +14,7 @@ git clone "https://<user_name>@github.com/....git"
 ```
 ## Clone Specific Branch
 ```bash
-git clone -b <branch> --single-branch "https://...github.com/....git"
+git clone -b <branch_name> [--single-branch] "https://...github.com/....git"
 ```
 
 # Configure User Information
@@ -27,9 +27,9 @@ git config [--global] user.name "<user_name>"
 # Remote
 - The `git remote` command lets you create, view, and delete connections to other repositories. Remote connections are more like bookmarks rather than direct links into other repositories. Instead of providing real-time access to another repository, they serve as convenient names that can be used to reference a not-so-convenient URL.
 ```bash
+# List the remote connections you have to other repositories. With `-v`, it includes the URL of each connection.
 git remote -v
 ```
-- List the remote connections you have to other repositories. With `-v`, it includes the URL of each connection.
 ## Add Remote
 ```bash
 # Create a new connection to a remote repository. After adding a remote, you’ll be able to use `＜remote_name＞` as a convenient shortcut for `＜repository_url＞` in other Git commands.
@@ -144,6 +144,15 @@ git reset HEAD~1
 ```
 
 # Branch
+## Show Branch List
+```bash
+# 로컬저장소 브랜치 목록확인
+git branch
+# 원격저장소 브랜치 목록확인
+git branch -r
+# 모든 브랜치 목록확인
+git branch -a
+```
 ## Create Branch
 ```bash
 git checkout -b <branch_name>

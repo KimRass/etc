@@ -180,11 +180,15 @@ git merge --abort
 # ".DS_Store"
 ## Delete ALL ".DS_Store"
 ```bash
-sudo find / -name ".DS_Store" -depth -exec rm {} \;
+find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch -f
 ```
 ## Stop ".DS_Store" from Generating
 ```bash
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+```
+## Create ".gitignore"
+```bash
+echo .DS_Store >> .gitignore
 ```
 
 # Convert from CRLF to LF

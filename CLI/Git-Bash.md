@@ -81,7 +81,9 @@ git clean -fd
 ```bash
 # The `git commit` command is used to commit a snapshot of the staging directory to the repositories commit history.
 git commit -m "<message>"
-# Commit과 함께 메시지를 변경합니다.
+```
+## Amend Most Recent Commit Message
+```bash
 git commit --amend -m "<message>"
 ```
 ## Undo Commit File
@@ -177,18 +179,23 @@ git merge <branch_name>
 git merge --abort
 ```
 
-# ".DS_Store"
-## Delete ALL ".DS_Store"
+# ".DS_Store" etc
+## Delete ALL
 ```bash
-find . -name .DS_Store -print0 | xargs -0 git rm --ignore-unmatch -f
+find . -name .DS_Store -print0 | xargs -0 git rm -r --ignore-unmatch -f
+find . -name *.pyc -print0 | xargs -0 git rm -r --ignore-unmatch -f
+find . -name .ipynb_checkpoints -print0 | xargs -0 git rm -r --ignore-unmatch -f
 ```
-## Stop ".DS_Store" from Generating
+## Stop from Generating
 ```bash
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
 ```
-## Create ".gitignore"
+## ".gitignore"
 ```bash
 echo .DS_Store >> .gitignore
+echo *.pyc* >> .gitignore
+echo __pycache__/ >> .gitignore
+echo .ipynb_checkpoints/ >> .gitignore
 ```
 
 # Convert from CRLF to LF

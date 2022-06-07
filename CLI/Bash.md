@@ -15,6 +15,7 @@ cd
 ls -a
 # .bash_profile 없다면
 touch .bash_profile
+
 open .bash_profile
 # 내용 추가
 export PYTHONPATH="/Users/jongbeom.kim/Desktop/workspace/flitto/data_mgmt"

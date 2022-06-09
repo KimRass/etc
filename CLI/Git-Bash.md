@@ -17,11 +17,21 @@ git clone "https://<user_name>@github.com/....git"
 git clone -b <branch_name> [--single-branch] "https://...github.com/....git"
 ```
 
-# Configure User Information
+# User Information
+## List User Information
 ```bash
-# Global level configuration(`--global`) is user-specific, meaning it is applied to an operating system user. Global configuration values are stored in a file that is located in a user's home directory.
-git config [--global] user.email "<user_email>"
-git config [--global] user.name "<user_name>"
+git config --list
+```
+## Configure User Information
+```bash
+# Options: `--global`, `--local`
+git config user.email "<user_email>"
+git config user.name "<user_name>"
+```
+## Delete User Information
+```bash
+git config --unset user.email "<user_email>"
+git config --unset user.name "<user_name>"
 ```
 
 # Remote

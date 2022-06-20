@@ -17,6 +17,14 @@ git clone "https://<user_name>@github.com/....git"
 git clone -b <branch_name> [--single-branch] "https://...github.com/....git"
 ```
 
+# Settings
+## Case Sensitive
+```bash
+git config core.ignorecase false
+...
+git rm -r --cached .
+```
+
 # User Information
 ## List User Information
 ```bash

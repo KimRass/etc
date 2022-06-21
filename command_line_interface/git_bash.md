@@ -218,6 +218,9 @@ echo .DS_Store >> .gitignore
 echo *.pyc* >> .gitignore
 echo __pycache__/ >> .gitignore
 echo .ipynb_checkpoints/ >> .gitignore
+
+# Apply to already existing files
+git rm -r --cached .
 ```
 
 # Convert from CRLF to LF

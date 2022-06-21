@@ -177,6 +177,10 @@ git branch -a
 ```bash
 git checkout -b <branch_name>
 ```
+### Delete Branch
+```bash
+git branch -d <branch_name>
+```
 ### Create Branch from Another branch
 ```bash
 git pull origin <branch_name1>

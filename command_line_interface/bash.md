@@ -222,6 +222,11 @@ curl --request POST \
     --data "$json" \
     $slack_webhook_url
 ```
+## Download File
+```sh
+curl -L -O <url>
+# Example curl -L -O https://github.com/kthworks/KoreanSTT-DeepSpeech2/raw/main/aihub_character_vocabs.csv
+```
 
 # `grep`
 ```sh

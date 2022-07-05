@@ -10,7 +10,12 @@ which aws
 aws --version
 ```
 
-# Upload
+# List
+```sh
+aws s3 ls s3://flitto-deliveries-9957/...
 ```
+
+# Upload
+```sh
 aws s3 cp <directory_name> s3://flitto-deliveries-9957/... --recursive --acl bucket-owner-full-control
 ```

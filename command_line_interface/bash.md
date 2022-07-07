@@ -144,6 +144,9 @@ done < <file>
 
 # Find File by Pattern
 ```sh
+# `-type f`: Regular file
+# `-type d`: Directory
+
 find <path> -name "<pattern1>"
 
 # Example
@@ -250,11 +253,19 @@ text=$(grep ".*현재가.*</dd>$" stock_flitto_enc.html)
 ```sh
 <variable1>=$(echo $<variable2> | grep -o -E "<regex>")
 ```
+## Length of Text
+```sh
+# Example
+s3_dir_without_slash=${s3_dir:0:${#s3_dir} - 1}
+```
 
 # `sed`
 ## Replace Text
 ```sh
-sed -e "s/<text1>/<text2/g"
+# `-e`, `--expression`: `sed -e` 이후에 여러 개의 expression을 사용할 때 필요합니다.
+sed 's/<text1>/<text2/g'
+# Example
+... | sed "s|$sub_dir||g"
 ```
 
 # `cut`
@@ -281,6 +292,9 @@ awk "<pattern> {<action>}" <file>
 
 # `$0`: 전체 컬럼
 # `$n`: `n`번째 컬럼
+```
+```sh
+... | awk '{print $4}'
 ```
 
 # `file`

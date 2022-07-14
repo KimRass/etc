@@ -1,14 +1,3 @@
-# `apt` (Advanced Package Tool) (Linux)
-- Source: https://www.geeksforgeeks.org/apt-get-command-in-linux-with-examples/
-- `apt-get` is a command-line tool which helps in handling packages in Linux. Its main task is to retrieve the information and packages from the authenticated sources for installation, upgrade and removal of packages along with their dependencies.
-## `apt-get`
-### `apt-get update`
-- ***This command is used to synchronize the package index files from their sources again. You need to perform an update before you upgrade or dist-upgrade.***
-### `apt-get upgrade`
-- ***This command is used to install the latest versions of the packages currently installed on the user’s system from the sources enumerated in `/etc/apt/sources.list`. You need to perform an update before the upgrade, so that apt-get knows that new versions of packages are available.***
-### `apt-get install`
-- This command is used to install or upgrade packages. It is followed by one or more package names the user wishes to install. All the dependencies of the desired packages will also be retrieved and installed. ***The user can also select the desired version by following the package name with an ‘equals’ and the desired version number. Both of these version selection methods have the potential to downgrade the packages, so must be used with care.***
-
 # Python Environment Path
 ```sh
 cd
@@ -35,8 +24,9 @@ export PATH=%PATH:/bin:/usr/local/bin:/usr/bin
 ## `pwd`: Print working directory
 ## `cd`: Change directory
 ## `mkdir`: Create a directory
-## `rmdir`: Remove an empty directory
-### `rm -R`: Remove nested directories
+## `rm`: Removes a file.
+## `rm -d`: Removes an empty directory.
+## `rm -r`: Removes directory which is not empty.
 ## `ls`
 - Source: https://linuxize.com/post/how-to-list-files-in-linux-using-the-ls-command/
 ```sh

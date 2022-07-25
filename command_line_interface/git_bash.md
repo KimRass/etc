@@ -74,7 +74,9 @@ git add .
 ```
 ## Undo `git add`
 ```bash
-git reset HEAD <file1> <file2> ...
+git reset HEAD [<file1> <file2> ...]
+# All files become unstaged
+git add *
 ```
 
 # Remove File from the Staging Area
@@ -190,6 +192,9 @@ git checkout -b <branch_name2> <branch_name2>
 ## Switch to Branch
 ```bash
 git checkout <branch_name>
+# Force switch
+# `-f` is short for `--force`, which is an alias for `--discard-changes`)
+git switch -f <branch_name>
 ```
 ## Merge
 ```bash
